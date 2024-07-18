@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 2rem;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bottom {
+    .copy {
+      font-size: 1rem;
+      letter-spacing: 1px;
+      padding-top: 1rem;
+      text-align: center;
+      border-top: 1px solid #bbb;
+    }
+  }
+}

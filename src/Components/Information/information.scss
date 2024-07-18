@@ -1,0 +1,55 @@
+.story {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  .heading-cv {
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 10.4vw;
+    color: #83735b;
+
+    // font-family: a;
+
+    font-family: "Dancing Script", cursive;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+
+  .profile {
+    position: relative;
+    // width: fit-content;
+    margin-top: 1rem;
+    overflow: hidden;
+  }
+
+  .blurry-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    filter: none;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 60%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 60%
+    );
+    filter: blur(0) contrast(1) brightness(1);
+  }
+
+  .blurry-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: inherit;
+    filter: blur(8px); /* Adjust the blur amount as needed */
+  }
+}

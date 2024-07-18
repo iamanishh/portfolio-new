@@ -1,0 +1,41 @@
+.container {
+  max-width: min(1240px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+section {
+  padding: 5rem 0;
+}
+@media (max-width: 768px) {
+  section {
+    padding: 3rem 0;
+  }
+}
+
+.sub-head {
+  font-size: 2rem;
+}
+
+.text-cursive {
+  font-family: a;
+  font-size: 2rem;
+}
+
+.tiny {
+  font-size: 0.7rem;
+  color: #7c7c7c;
+  font-weight: 600;
+}
+.btn-round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: clamp(8em, 11vw, 10em);
+  height: clamp(8em, 11vw, 10em);
+  border-radius: 50%;
+  border: 0;
+
+  color: #fff;
+  background-color: black;
+}

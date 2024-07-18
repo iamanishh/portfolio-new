@@ -1,0 +1,72 @@
+.skill {
+  display: flex;
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.1;
+    flex: 1;
+
+    h1 {
+      font-size: calc(clamp(3.8em, 7vw, 8em) * 0.875);
+    }
+
+    &-abb {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+
+      p {
+        // align-self: flex-end;
+        font-size: 1em;
+        line-height: 1.1;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  &__bottom {
+    flex: 1;
+    margin-top: 10rem;
+
+    &-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      p {
+        margin-bottom: 1rem;
+        font-weight: 550;
+        font-size: 1.2rem;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        li {
+          display: flex;
+          padding: 8px 20px;
+
+          width: fit-content;
+          border: 1px solid #b0b6ba;
+          border-radius: 20px;
+          font-size: 1rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .skill {
+    flex-direction: column;
+
+    &__bottom {
+      margin-top: 0;
+    }
+  }
+}
