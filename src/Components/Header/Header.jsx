@@ -12,8 +12,8 @@ const Header = () => {
         <h4>Hi there, 👋</h4>
 
         <h4 className="head">
-          Welcome to my digital playground. Crafting robust backend solutions,
-          one line of code at a time.
+          I enjoy building dynamic website and crafting robust backend
+          solutions, one line of code at a time.
         </h4>
       </div>
     </div>

@@ -1,8 +1,12 @@
 .container {
-  max-width: min(1200px, calc(100% - 32px));
+  max-width: min(1240px, calc(100% - 32px));
   margin: 0 auto;
 }
-
+@media (min-width: 1200px) {
+  .container {
+    max-width: min(1240px, calc(100% - 120px));
+  }
+}
 section {
   padding: 5rem 0;
 }
