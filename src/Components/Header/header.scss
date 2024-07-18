@@ -1,9 +1,12 @@
 .header {
-  height: calc(100vh - 40px);
-
+  height: calc(90vh - 60px);
   display: flex;
   padding-top: 8rem;
-  // background-color: rgb(188, 226, 188);
+
+  // background-image: url("../../assets/images/background.svg");
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
 
   &__left {
     width: 52%;
@@ -23,6 +26,20 @@
   }
   &__right {
     width: 48%;
+
+    h4 {
+      margin-bottom: 0;
+      display: inline-block;
+      font-size: 1.8rem;
+      line-height: 1.1;
+    }
+
+    .profile {
+      display: inline-block;
+      width: 23px;
+      padding-left: 5px;
+      cursor: pointer;
+    }
   }
 
   @media (max-width: 767px) {
@@ -40,6 +57,10 @@
       h1 {
         font-size: 27vw;
       }
+    }
+
+    &__right {
+      margin-top: 3rem;
     }
   }
 }
