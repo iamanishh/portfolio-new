@@ -1,6 +1,6 @@
 import React from "react";
 import "./skills.scss";
-
+import skill from "../../assets/images/skill.png";
 const Skills = () => {
   return (
     <section className="skill">
@@ -15,6 +15,9 @@ const Skills = () => {
       </div>
 
       <div className="skill__bottom">
+        <div className="skill__bottom-img">
+          <img src={skill} alt="skill" />
+        </div>
         <div className="skill__bottom-stack">
           <div className="tech">
             <p>Languages</p>

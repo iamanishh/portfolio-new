@@ -48,6 +48,12 @@
     &__left {
       width: 66%;
       margin-right: 10%;
+      position: relative;
+
+      img {
+        filter: grayscale(1);
+        width: 400px;
+      }
     }
 
     &__right {

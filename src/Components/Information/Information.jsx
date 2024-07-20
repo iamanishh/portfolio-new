@@ -7,7 +7,17 @@ const Information = () => {
     <div className="story">
       <h3 className="heading-cv">My Story</h3>
       <div className="profile">
-        <img className="blurry-image" src={profile} alt="profile-img" />
+        <div className="profile-left">
+          <img className="blurry-image" src={profile} alt="profile-img" />
+        </div>
+        <div className="profile-right">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum,
+            nesciunt incidunt consequatur necessitatibus maiores amet sint
+            placeat error vel iste dolorem dolor eveniet itaque cupiditate
+            eligendi autem esse culpa nisi.
+          </p>
+        </div>
       </div>
     </div>
   );

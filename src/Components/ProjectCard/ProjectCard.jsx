@@ -3,7 +3,7 @@ import "./projectcard.scss";
 import { projects } from "../../data/data";
 
 import { BsArrowUpRightSquare } from "react-icons/bs";
-
+import projectImg from "../../assets/images/project.svg";
 const ProjectCard = () => {
   return (
     <section className="project">
@@ -23,7 +23,9 @@ const ProjectCard = () => {
           <p>Backend</p>
         </div> */}
 
-        <div className="globe"></div>
+        <div className="projImage">
+          <img src={projectImg} alt="project" width={500} />
+        </div>
       </div>
 
       <div className="project__bottom">

@@ -13,8 +13,8 @@ const About = () => {
       <div className="about ">
         <div className="about__left">
           <h4>
-            A software engineer with a passion for backend development. I
-            throughly enjoy building things that live on the internet.
+            I throughly enjoy building things that live on the internet, one
+            line of code at a time.
           </h4>
         </div>
         <div className="about__right">
