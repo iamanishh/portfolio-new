@@ -38,8 +38,8 @@
 
   @media (max-width: 767px) {
     flex-direction: column-reverse;
-    justify-content: space-between;
-    // gap: 3rem;
+    // justify-content: space-between;
+    gap: 3rem;
 
     &__left {
       align-self: unset;
