@@ -2,7 +2,7 @@ import React from "react";
 import "./about.scss";
 
 import { useNavigate } from "react-router-dom";
-
+66;
 const About = () => {
   const navigate = useNavigate();
   const handleClick = () => {
@@ -24,6 +24,7 @@ const About = () => {
               that drive innovation and success.
             </p>
           </div>
+
           <div className="btn">
             <button className="btn-round">About me</button>
           </div>
