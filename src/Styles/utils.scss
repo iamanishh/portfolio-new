@@ -8,6 +8,9 @@
 //     max-width: min(1240px, calc(100% - 120px));
 //   }}
 
+:root {
+  --vh: 1vh;
+}
 section {
   padding: 5rem 0;
 }

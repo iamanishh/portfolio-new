@@ -7,10 +7,10 @@ const Information = () => {
     <div className="story">
       <h3 className="heading-cv">My Story</h3>
       <div className="profile">
-        <div className="profile-left">
+        <div className="profile__left">
           <img className="blurry-image" src={profile} alt="profile-img" />
         </div>
-        <div className="profile-right">
+        <div className="profile__right">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum,
             nesciunt incidunt consequatur necessitatibus maiores amet sint
