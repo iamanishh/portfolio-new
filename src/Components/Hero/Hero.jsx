@@ -10,13 +10,15 @@ const Hero = () => {
     <div id="hero">
       <div className="container hero">
         <div className="hero__content">
-          <img src={profile} alt="Profile" width={80} />
+          <img src={profile} alt="Profile" width={100} />
           <p>Hi, I'm Manish Kumar.</p>
-          <h2>Behind-the-scenes architect</h2>
+          <h2>
+            Behind-the-scenes architect engineering efficient, scalable systems.
+          </h2>
           <p className="desc">
-            As a Backend Engineer with nearly two years of experience, I
-            specialize in designing scalable systems, optimizing performance,
-            and developing robust APIs to drive impactful applications.
+            With nearly two years of experience as a Software Engineer, I have
+            contributed in creating efficient backend systems designed for
+            scalability and performance.
           </p>
           <div className="hero-btn">
             <a href="#contact">

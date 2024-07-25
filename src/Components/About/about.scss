@@ -1,24 +1,23 @@
 #about {
-  // background-color: #e0d8c6;
+  background-color: #fff;
 }
 
 .about {
-  // background-color: #d6c8ad;
+  // background-color: #fff;
   padding-block: 5rem;
 
   &__content {
     display: flex;
-    max-width: 75%;
+    max-width: 77%;
     margin: 0 auto;
 
     .left {
-      width: 60%;
-      position: relative;
+      width: 65%;
     }
 
     .right {
       width: 25%;
-      margin-left: 15%;
+      margin-left: 12%;
 
       display: flex;
       flex-direction: column;
