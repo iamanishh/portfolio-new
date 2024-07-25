@@ -1,6 +1,6 @@
 import React from "react";
 import "./college.scss";
-import collegeImg from "../../assets/images/lpu22.jpeg";
+// import collegeImg from "../../assets/images/lpu22.jpeg";
 const College = () => {
   return (
     <div className="college">
@@ -15,7 +15,7 @@ const College = () => {
       </div>
       <figure className="college__image">
         <img
-          src={collegeImg}
+          // src={collegeImg}
           alt="Lovely Professional University campus during rainy season"
         />
         <figcaption>University campus during rainy season</figcaption>

@@ -30,3 +30,10 @@ export const projects = [
       "This is a banking application which involves creating a robust backend system that allows users to create and manage their accounts.",
   },
 ];
+
+export const links = [
+  { name: "about", href: "#about" },
+  { name: "skills", href: "#skills" },
+  { name: "projects", href: "#project" },
+  { name: "contact", href: "#contact" },
+];

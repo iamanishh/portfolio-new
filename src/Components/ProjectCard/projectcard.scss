@@ -1,6 +1,12 @@
+#project {
+  // background-color: #b2f3b2;
+}
+
 .project {
+  // background-color: #b2f3b2;
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 3rem;
 
   &__top {

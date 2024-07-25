@@ -1,12 +1,13 @@
 .container {
-  max-width: min(1240px, calc(100% - 32px));
+  max-width: min(1240px, calc(100% - 4rem));
   margin: 0 auto;
 }
 
-// @media (min-width: 1200px) {
-//   .container {
-//     max-width: min(1240px, calc(100% - 120px));
-//   }}
+@media (max-width: 768px) {
+  .container {
+    max-width: min(1240px, calc(100% - 2rem));
+  }
+}
 
 :root {
   --vh: 1vh;
@@ -29,10 +30,41 @@ section {
   font-size: 2rem;
 }
 
+.r-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  a {
+    font-size: 1.7rem;
+    font-weight: 800;
+
+    span {
+      color: blue;
+    }
+  }
+}
+
 .tiny {
   font-size: 0.7rem;
   color: #7c7c7c;
   font-weight: 600;
+}
+.tinyy {
+  font-size: 0.9rem;
+  color: #979696;
+  font-weight: 600;
+}
+
+.w-color {
+  color: #fff;
 }
 .btn-round {
   display: flex;
@@ -47,27 +79,3 @@ section {
   color: #fff;
   background-color: black;
 }
-
-// <span>Underline</span>
-
-// span {
-//   position: relative;
-
-// }
-
-// span::before {
-//   content: '';
-//   position: absolute;
-//   left: 50%;
-//   bottom: 0;
-//   width: 100%;
-//   height: 2px;
-//   background-color: #fc2f70;
-//   transform-origin: center;
-//   transform: translate(-50%, 0) scaleX(0);
-//   transition: transform 0.3s ease-in-out;
-// }
-
-// span:hover::before {
-//   transform: translate(-50%, 0) scaleX(1);
-// }

@@ -6,6 +6,7 @@ const Information = () => {
   return (
     <div className="story">
       <h3 className="heading-cv">My Story</h3>
+
       <div className="profile">
         <div className="profile__left">
           <img className="blurry-image" src={profile} alt="profile-img" />
