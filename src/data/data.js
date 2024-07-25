@@ -1,13 +1,15 @@
 import java from "../assets/images/Java.svg";
 import spring from "../assets/images/Spring.svg";
+import cplus from "../assets/images/cplus.svg";
+
+import sql from "../assets/images/SQL.svg";
+import mongodb from "../assets/images/MongoDB.svg";
 
 import html from "../assets/images/HTML5.svg";
 import css from "../assets/images/CSS3.svg";
 import javascript from "../assets/images/JavaScript.svg";
+import typescript from "../assets/images/typescript.svg";
 import react from "../assets/images/React.svg";
-
-import sql from "../assets/images/SQL.svg";
-import mongodb from "../assets/images/MongoDB.svg";
 
 import github from "../assets/images/GitHub.svg";
 import docker from "../assets/images/Docker.svg";
@@ -18,9 +20,11 @@ import linux from "../assets/images/Linux.svg";
 export const techImages = {
   java,
   spring,
+  cplus,
   html,
   css,
   javascript,
+  typescript,
   react,
   sql,
   mongodb,

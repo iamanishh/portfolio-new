@@ -1,6 +1,7 @@
 import React from "react";
 import "./skills.scss";
 import { techImages } from "../../data/data";
+import skill from "../../assets/images/skill.png";
 
 const Skills = () => {
   return (
@@ -15,6 +16,9 @@ const Skills = () => {
           </div>
 
           <div className="s-bottom">
+            <div className="b-images">
+              <img src={skill} alt="" style={{ filter: "grayscale(90%)" }} />
+            </div>
             <div className="techstack">
               <div className="s-back">
                 <h3>
@@ -26,22 +30,11 @@ const Skills = () => {
                   APIs, implementing logic and optimising databases.
                 </p>
                 <div className="tech-image">
-                  <div className="img-box">
-                    <p className="tiny">java</p>
-                    <img src={techImages.java} alt="" width={25} />
-                  </div>
-                  <div className="img-box">
-                    <p className="tiny">springboot</p>
-                    <img src={techImages.spring} alt="" width={25} />
-                  </div>
-                  <div className="img-box">
-                    <p className="tiny">sql</p>
-                    <img src={techImages.sql} alt="" width={25} />
-                  </div>
-                  <div className="img-box">
-                    <p className="tiny">mongodb</p>
-                    <img src={techImages.mongodb} alt="" width={25} />
-                  </div>
+                  <img src={techImages.java} alt="" width={25} />
+                  <img src={techImages.spring} alt="" width={25} />
+                  <img src={techImages.cplus} alt="" width={25} />
+                  <img src={techImages.sql} alt="" width={25} />
+                  <img src={techImages.mongodb} alt="" width={25} />
                 </div>
                 <div className=" tech-desc">
                   <div className="tech lan">
@@ -69,28 +62,17 @@ const Skills = () => {
                 </p>
 
                 <div className="tech-image">
-                  <div className="img-box">
-                    <p className="tiny">html</p>
-                    <img src={techImages.html} alt="" width={25} />
-                  </div>
-                  <div className="img-box">
-                    <p className="tiny">css</p>
-                    <img src={techImages.css} alt="" width={25} />
-                  </div>
-                  <div className="img-box">
-                    <p className="tiny">javascript</p>
-                    <img src={techImages.javascript} alt="" width={25} />
-                  </div>
-                  <div className="img-box">
-                    <p className="tiny">react</p>
-                    <img src={techImages.react} alt="" width={25} />
-                  </div>
+                  <img src={techImages.html} alt="" width={25} />
+                  <img src={techImages.css} alt="" width={25} />
+                  <img src={techImages.javascript} alt="" width={25} />
+                  <img src={techImages.typescript} alt="" width={25} />
+                  <img src={techImages.react} alt="" width={25} />
                 </div>
 
                 <div className=" tech-desc">
                   <div className="tech lan">
                     <p className="bold">Language: </p>
-                    <p> HTML, CSS, JavaScript </p>
+                    <p> HTML, CSS, JavaScript/TypeScript </p>
                   </div>
                   <div className="tech fwork">
                     <p className="bold">Framework: </p>
@@ -98,25 +80,23 @@ const Skills = () => {
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className="tools">
-              <div className="tool-desc">
+              <div className="s-tools">
                 <h3>
                   {" "}
-                  {"{"} Tools and Technologies{"}"}
+                  {"{"} Tools and Technologies {"}"}
                 </h3>
                 <p>
                   These are the some of the tools and technologies I often use
-                  for my development purposes.
+                  for my development purposes
                 </p>
-              </div>
-              <div className="tool-image">
-                <img src={techImages.github} alt="" width={25} />
-                <img src={techImages.aws} alt="" width={25} />
-                <img src={techImages.linux} alt="" width={25} />
-                <img src={techImages.docker} alt="" width={25} />
-                <img src={techImages.kubernetes} alt="" width={25} />
+
+                <div className="tech-image">
+                  <img src={techImages.github} alt="" width={25} />
+                  <img src={techImages.aws} alt="" width={25} />
+                  <img src={techImages.linux} alt="" width={25} />
+                  <img src={techImages.docker} alt="" width={25} />
+                  <img src={techImages.kubernetes} alt="" width={25} />
+                </div>
               </div>
             </div>
           </div>
