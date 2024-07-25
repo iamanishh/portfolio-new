@@ -7,10 +7,10 @@ import { CiLocationArrow1 } from "react-icons/ci";
 
 const Hero = () => {
   return (
-    <div id="hero">
+    <section id="hero">
       <div className="container hero">
         <div className="hero__content">
-          <img src={profile} alt="Profile" width={100} />
+          <img src={profile} alt="Profile" width={110} />
           <p>Hi, I'm Manish Kumar.</p>
           <h2>Behind-the-scenes architect</h2>
           <p className="desc">
@@ -30,7 +30,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
