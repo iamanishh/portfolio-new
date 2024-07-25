@@ -11,7 +11,8 @@ const Hero = () => {
       <div className="container hero">
         <div className="hero__content">
           <img src={profile} alt="Profile" width={110} />
-          <p>Hi, I'm Manish Kumar.</p>
+          <p className="name">Hi, I'm Manish Kumar.</p>
+
           <h2>Behind-the-scenes architect</h2>
           <p className="desc">
             With nearly two years of experience as a Software Engineer, I have

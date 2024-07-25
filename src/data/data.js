@@ -1,3 +1,36 @@
+import java from "../assets/images/Java.svg";
+import spring from "../assets/images/Spring.svg";
+
+import html from "../assets/images/HTML5.svg";
+import css from "../assets/images/CSS3.svg";
+import javascript from "../assets/images/JavaScript.svg";
+import react from "../assets/images/React.svg";
+
+import sql from "../assets/images/SQL.svg";
+import mongodb from "../assets/images/MongoDB.svg";
+
+import github from "../assets/images/GitHub.svg";
+import docker from "../assets/images/Docker.svg";
+import kubernetes from "../assets/images/Kubernetes.svg";
+import aws from "../assets/images/AWS.svg";
+import linux from "../assets/images/Linux.svg";
+
+export const techImages = {
+  java,
+  spring,
+  html,
+  css,
+  javascript,
+  react,
+  sql,
+  mongodb,
+  github,
+  docker,
+  kubernetes,
+  aws,
+  linux,
+};
+
 export const projects = [
   {
     title: "Movie Review",
