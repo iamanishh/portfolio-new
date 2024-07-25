@@ -12,9 +12,7 @@ const Hero = () => {
         <div className="hero__content">
           <img src={profile} alt="Profile" width={100} />
           <p>Hi, I'm Manish Kumar.</p>
-          <h2>
-            Behind-the-scenes architect engineering efficient, scalable systems.
-          </h2>
+          <h2>Behind-the-scenes architect</h2>
           <p className="desc">
             With nearly two years of experience as a Software Engineer, I have
             contributed in creating efficient backend systems designed for
