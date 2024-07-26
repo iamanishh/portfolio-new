@@ -7,6 +7,7 @@ const Skills = () => {
   return (
     <section id="skill">
       <div className="container skill">
+        <div className="skill__grid"></div>
         <div className="skill__content">
           <div className="s-top">
             <p className="tiny-md">
@@ -17,7 +18,7 @@ const Skills = () => {
 
           <div className="s-bottom">
             <div className="b-images">
-              <img src={skill} alt="" style={{ filter: "grayscale(90%)" }} />
+              <img src={skill} alt="skill-image" />
             </div>
             <div className="techstack">
               <div className="s-back">
@@ -42,8 +43,8 @@ const Skills = () => {
                     <p>Java, C/C++, SQL </p>
                   </div>
                   <div className="tech fwork">
-                    <p className="bold">Framework: </p>
-                    <p>Spring Boot, Hiberanate</p>
+                    <p className="bold">Library/Framework: </p>
+                    <p>Spring Boot, Node.js</p>
                   </div>
                   <div className="tech db">
                     <p className="bold">Databases: </p>
@@ -72,10 +73,10 @@ const Skills = () => {
                 <div className=" tech-desc">
                   <div className="tech lan">
                     <p className="bold">Language: </p>
-                    <p> HTML, CSS, JavaScript/TypeScript </p>
+                    <p> HTML, CSS, JavaScript </p>
                   </div>
                   <div className="tech fwork">
-                    <p className="bold">Framework: </p>
+                    <p className="bold">Library/Framework: </p>
                     <p>React, Redux</p>
                   </div>
                 </div>

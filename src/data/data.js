@@ -17,6 +17,8 @@ import kubernetes from "../assets/images/Kubernetes.svg";
 import aws from "../assets/images/AWS.svg";
 import linux from "../assets/images/Linux.svg";
 
+// import capture from "../assets/images/Capture.webp";
+
 export const techImages = {
   java,
   spring,

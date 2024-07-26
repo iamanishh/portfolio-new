@@ -1,9 +1,8 @@
 #project {
-  // background-color: #b2f3b2;
+  // background-color: ghostwhite;
 }
 
 .project {
-  // background-color: #b2f3b2;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -52,14 +51,38 @@
       .card {
         display: flex;
         flex-direction: column;
-        border-bottom: 1px solid #dbdbdb;
+        border-bottom: 1px solid #ccc;
 
         &-title {
           margin-bottom: 0.5rem;
         }
         .image {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           height: 20rem;
-          background-color: #ffffff;
+          border: 1px solid #fff5d5;
+          background-image: linear-gradient(
+            to top,
+            #fbe8af,
+            #fceab5,
+            #fdebbb,
+            #fdedc1,
+            #feefc7,
+            #fef1cc,
+            #fef2d1,
+            #fef4d6,
+            #fef5dc,
+            #fdf7e1,
+            #fdf8e7,
+            #fdf9ec
+          );
+
+          img {
+            width: 70%;
+            height: 70%;
+            object-fit: cover;
+          }
         }
         .tech {
           display: flex;

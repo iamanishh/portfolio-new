@@ -1,10 +1,9 @@
 #hero {
-  //   background-color: bisque;
+  // background-color: bisque;
 }
 
 .hero {
   // height: calc(100vh - 70px);
-  // background-color: #f3f3f3;
 
   &__content {
     display: flex;
@@ -39,12 +38,18 @@
         width: fit-content;
         padding: 0.5rem 1rem;
         border-radius: 3rem;
-        border: 1px solid #bbb;
+        border: 1px solid #fdd5a3;
+        background-color: bisque;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
       }
     }
 
-    @media screen and (max-width: 512px) {
+    @media screen and (max-width: 768px) {
       width: 100%;
+      margin-block: 2rem;
+      .name {
+        white-space: nowrap;
+      }
 
       .desc {
         padding-inline: 1rem;

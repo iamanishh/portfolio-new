@@ -3,7 +3,10 @@ import "./projectcard.scss";
 import { projects } from "../../data/data";
 
 import { ImArrowUpRight2 } from "react-icons/im";
+
 import projectImg from "../../assets/images/project.svg";
+import capture from "../../assets/images/Capture.webp";
+
 const ProjectCard = () => {
   return (
     <section id="project">
@@ -34,7 +37,9 @@ const ProjectCard = () => {
             {projects.map((project, index) => (
               <div className="card" key={index}>
                 <h4 className="card-title">{project.title}</h4>
-                <div className="image"></div>
+                <div className="image">
+                  <img src={capture} alt="" />
+                </div>
 
                 <p className="description">{project.description}</p>
 
