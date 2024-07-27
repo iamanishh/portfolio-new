@@ -28,28 +28,29 @@ const ProjectCard = () => {
         </div> */}
 
           <div className="projImage">
-            <img src={projectImg} alt="project" width={500} />
+            <img src={projectImg} alt="project" width={300} />
           </div>
         </div>
 
         <div className="project__bottom">
           <div className="project-cards">
             {projects.map((project, index) => (
-              <div className="card" key={index}>
+              <div className="card " key={index}>
                 <h4 className="card-title">{project.title}</h4>
                 <div className="image">
                   <img src={capture} alt="" />
                 </div>
 
-                <p className="description">{project.description}</p>
+                <div className="desc-box">
+                  <p className="description">{project.description}</p>
 
-                <div className="tech">
-                  <p className="technology">{project.technology}</p>
-                  <div className="git">
-                    <ImArrowUpRight2 />
+                  <div className="tech">
+                    <p className="technology">{project.technology}</p>
+                    <div className="git">
+                      <ImArrowUpRight2 />
+                    </div>
                   </div>
                 </div>
-                {/* <hr /> */}
               </div>
             ))}
           </div>
