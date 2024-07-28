@@ -34,15 +34,18 @@
   }
   &__bottom {
     .project-cards {
-      padding-inline: 8rem;
+      padding-inline: 6rem;
 
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
 
       .card {
         display: flex;
         flex-direction: column;
+        background-color: #faf4f3;
+        padding: 1rem;
+        border-radius: 15px;
 
         &-title {
           margin-bottom: 0.5rem;
@@ -53,29 +56,18 @@
           justify-content: center;
           padding: 1rem;
           // height: 20rem;
+          background-color: #fff;
 
           // background-image: linear-gradient(
           //   to bottom,
-          //   #e6e6e6,
-          //   #e7e7e7,
-          //   #e8e8e8,
-          //   #ededed,
-          //   #f2f2f2,
-          //   #f6f6f6,
-          //   #fafafa,
+
+          //   #d6d6fc,
+          //   #e6e6ff,
+          //   #ebebfa,
+          //   #f2f2fc,
+          //   #f7f7f7,
           //   #ffffff
           // );
-
-          background-image: linear-gradient(
-            to bottom,
-
-            #d6d6fc,
-            #e6e6ff,
-            #ebebfa,
-            #f2f2fc,
-            #f7f7f7,
-            #ffffff
-          );
 
           img {
             width: 70%;
