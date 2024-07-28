@@ -4,7 +4,7 @@ import { projects } from "../../data/data";
 
 import { ImArrowUpRight2 } from "react-icons/im";
 
-import projectImg from "../../assets/images/project.svg";
+import projectImg from "../../assets/images/proj.svg";
 import capture from "../../assets/images/Capture.webp";
 
 const ProjectCard = () => {
@@ -20,15 +20,8 @@ const ProjectCard = () => {
               always working on something new, so check back often!
             </p>
           </div>
-
-          {/* <div className="filter">
-          <p>All projects</p>
-          <p>Frontend</p>
-          <p>Backend</p>
-        </div> */}
-
           <div className="projImage">
-            <img src={projectImg} alt="project" width={300} />
+            <img src={projectImg} alt="project" />
           </div>
         </div>
 
@@ -36,7 +29,9 @@ const ProjectCard = () => {
           <div className="project-cards">
             {projects.map((project, index) => (
               <div className="card " key={index}>
-                <h4 className="card-title">{project.title}</h4>
+                <h4 className="card-title">
+                  <span className="tiny-md">{project.id}</span> {project.title}
+                </h4>
                 <div className="image">
                   <img src={capture} alt="" />
                 </div>
