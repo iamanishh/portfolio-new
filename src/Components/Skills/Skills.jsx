@@ -7,7 +7,6 @@ const Skills = () => {
   return (
     <section id="skill">
       <div className="container skill">
-        <div className="skill__grid"></div>
         <div className="skill__content">
           <div className="s-top">
             <p className="tiny-md">

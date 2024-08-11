@@ -29,9 +29,7 @@ const ProjectCard = () => {
           <div className="project-cards">
             {projects.map((project, index) => (
               <div className="card " key={index}>
-                <h3 className="card-title">
-                  <span className="tiny-md">{project.id}</span> {project.title}
-                </h3>
+                <h3 className="card-title">{project.title}</h3>
                 <div className="image">
                   <img src={capture} alt="" />
                 </div>

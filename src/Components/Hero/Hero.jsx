@@ -4,6 +4,9 @@ import profile from "../../assets/images/hero-image.svg";
 import resume from "../../assets/images/resume.pdf";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { CiLocationArrow1 } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -27,6 +30,17 @@ const Hero = () => {
             <a href="" download>
               Resume &nbsp;
               <MdOutlineFileDownload />
+            </a>
+          </div>
+          <div className="hero-social">
+            <a href="">
+              <FaGithub />
+            </a>
+            <a href="">
+              <FaLinkedinIn />
+            </a>
+            <a href="">
+              <FaTwitter />
             </a>
           </div>
         </div>
