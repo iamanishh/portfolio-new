@@ -1,12 +1,7 @@
 import React from "react";
 import "./about.scss";
-import { useNavigate } from "react-router-dom";
 
 const About = () => {
-  // const navigate = useNavigate();
-  // const handleClick = () => {
-  //   navigate("/about");
-  // };
   return (
     <section id="about">
       <div className="container about">

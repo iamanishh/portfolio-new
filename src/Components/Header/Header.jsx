@@ -12,6 +12,7 @@ const Header = () => {
             Manish <span>.</span>
           </a>
         </div>
+
         <nav className="links">
           <ul>
             {links.map((link) => (
@@ -21,6 +22,7 @@ const Header = () => {
             ))}
           </ul>
         </nav>
+
         <div className="menu">
           <svg
             xmlns="http://www.w3.org/2000/svg"

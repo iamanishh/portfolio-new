@@ -3,14 +3,14 @@
 }
 
 .hero {
-  // height: calc(100vh - 70px);
+  height: calc(90vh - 70px);
 
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
     align-items: center;
+    gap: 1rem;
 
     width: 75%;
     margin-inline: auto;
@@ -46,7 +46,8 @@
 
     @media screen and (max-width: 768px) {
       width: 100%;
-      margin-block: 2rem;
+      // margin-block: 2rem;
+      margin-top: 3rem;
       .name {
         white-space: nowrap;
       }
