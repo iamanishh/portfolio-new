@@ -3,7 +3,7 @@
 }
 
 .hero {
-  height: calc(90vh - 70px);
+  // height: calc(90vh - 70px);
 
   &__content {
     display: flex;
@@ -41,6 +41,15 @@
         border: 1px solid #fdd5a3;
         background-color: bisque;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+    }
+    .hero-social {
+      display: flex;
+      gap: 1rem;
+
+      a {
+        font-size: 1.2rem;
+        margin-top: 1rem;
       }
     }
 
