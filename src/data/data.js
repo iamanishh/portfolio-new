@@ -8,7 +8,6 @@ import mongodb from "../assets/images/MongoDB.svg";
 import html from "../assets/images/HTML5.svg";
 import css from "../assets/images/CSS3.svg";
 import javascript from "../assets/images/JavaScript.svg";
-import typescript from "../assets/images/typescript.svg";
 import react from "../assets/images/React.svg";
 
 import github from "../assets/images/GitHub.svg";
@@ -19,23 +18,22 @@ import linux from "../assets/images/Linux.svg";
 
 // import capture from "../assets/images/Capture.webp";
 
-export const techImages = {
+export const techImages = [
   java,
   spring,
+  javascript,
   cplus,
+  react,
   html,
   css,
-  javascript,
-  typescript,
-  react,
   sql,
   mongodb,
   github,
+  linux,
   docker,
   kubernetes,
   aws,
-  linux,
-};
+];
 
 export const projects = [
   {

@@ -1,95 +1,62 @@
 #skill {
-  background-color: ghostwhite;
+  padding: 4rem 0;
+  background-color: #f9f9f9;
 }
 
 .skill {
-  // background-color: #d2d2e0;
-
   display: flex;
+  flex-direction: column;
+  gap: 3rem;
 
   &__content {
     display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    position: relative;
-    z-index: 100;
+    justify-content: space-around;
 
-    .s-bottom {
-      // background-color: #d2d2e0;
-      display: flex;
-      // justify-content: space-between;
-      gap: 5rem;
+    .desc {
+      margin-bottom: 2rem;
 
-      .b-images {
-        filter: grayscale(90);
-        width: 350px;
-        height: auto;
-      }
+      ul {
+        list-style: none;
+        padding: 0;
 
-      .techstack {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 2rem;
-
-        .s-back,
-        .s-front,
-        .s-tools {
+        .list {
           display: flex;
-          flex-direction: column;
-          gap: 1rem;
+          align-items: center;
+          margin-bottom: 1rem;
+          font-size: 1.1rem;
 
-          border: 1px solid #ccc;
-          padding: 2rem 1rem;
-
-          p {
-            line-height: 1.3;
+          .tick {
+            color: #4caf50;
+            margin-right: 0.5rem;
           }
-
-          .tech-image {
-            display: flex;
-            gap: 1rem;
-          }
-
-          .tech-desc {
-            display: flex;
-            flex-direction: column;
-
-            .tech {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-
-              .bold {
-                font-weight: bold;
-              }
-            }
-          }
-        }
-      }
-
-      @media screen and (max-width: 1024px) {
-        gap: 3rem;
-      }
-      @media screen and (max-width: 768px) {
-        flex-direction: column;
-
-        .b-images {
-          width: 100%;
         }
       }
     }
 
+    .images {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .techImg {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .techImg img {
+      max-width: 100%;
+      height: auto;
+    }
+
     @media screen and (max-width: 768px) {
-      margin-top: 3rem;
+      flex-direction: column;
     }
   }
 }
 
-@keyframes moveGrid {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 50px 50px;
-  }
+* {
+  // outline: 1px solid red;
 }
