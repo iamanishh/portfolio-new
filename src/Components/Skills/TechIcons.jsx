@@ -42,8 +42,8 @@ const icons = [
   { name: "Git", component: FaGit, color: "#f05032" },
   { name: "GitHub", component: FaGithub, color: "#181717" },
   { name: "Linux", component: FaLinux, color: "#000000" },
-  { name: "Docker", component: FaDocker, color: "#0db7ed" },
   { name: "AWS", component: FaAws, color: "#ff9900" },
+  { name: "Docker", component: FaDocker, color: "#0db7ed" },
   { name: "Kubernetes", component: SiKubernetes, color: "#326ce5" },
 ];
 

@@ -19,8 +19,11 @@ const Skills = () => {
     <section id="skill">
       <div className="container skill">
         <div className="heading">
-          <p> &lt; Skills &gt;</p>
-          <h2>Skills I possess as a specialist</h2>
+          <p className="tiny"> &lt; Skills &gt;</p>
+          <h2 className="boldFont">
+            Skills I possess as a <br />
+            specialist
+          </h2>
         </div>
         <div className="skill__content">
           <div className="desc">
