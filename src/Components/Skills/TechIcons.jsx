@@ -1,6 +1,5 @@
 import React from "react";
 import "./techIcons.scss";
-
 import {
   FaJava,
   FaReact,
@@ -25,36 +24,40 @@ import {
 } from "react-icons/si";
 
 const icons = [
-  { name: "Java", component: FaJava },
-  { name: "Spring", component: SiSpring },
-  { name: "Spring Boot", component: SiSpringboot },
-  { name: "Hibernate", component: SiHibernate },
-  { name: "React", component: FaReact },
-  { name: "JavaScript", component: FaJs },
-  { name: "HTML5", component: FaHtml5 },
-  { name: "CSS3", component: FaCss3Alt },
-  { name: "SQL", component: FaDatabase },
-  { name: "MongoDB", component: SiMongodb },
-  { name: "Redis", component: SiRedis },
-  { name: "Kafka", component: SiApachekafka },
-  { name: "Git", component: FaGit },
-  { name: "GitHub", component: FaGithub },
-  { name: "Linux", component: FaLinux },
-  { name: "AWS", component: FaAws },
-  { name: "Docker", component: FaDocker },
-  { name: "Kubernetes", component: SiKubernetes },
+  { name: "Java", component: FaJava, color: "#f89820" },
+  { name: "Spring", component: SiSpring, color: "#6db33f" },
+  { name: "Spring Boot", component: SiSpringboot, color: "#6db33f" },
+  { name: "Hibernate", component: SiHibernate, color: "#6f4f28" },
+
+  { name: "React", component: FaReact, color: "#61dafb" },
+  { name: "JavaScript", component: FaJs, color: "#f7e02f" },
+  { name: "HTML5", component: FaHtml5, color: "#e34c26" },
+  { name: "CSS3", component: FaCss3Alt, color: "#1572b6" },
+
+  { name: "Database", component: FaDatabase, color: "#003b6f" },
+  { name: "MongoDB", component: SiMongodb, color: "#47a248" },
+  { name: "Redis", component: SiRedis, color: "#d73a4a" },
+  { name: "Kafka", component: SiApachekafka, color: "#231f20" },
+
+  { name: "Git", component: FaGit, color: "#f05032" },
+  { name: "GitHub", component: FaGithub, color: "#181717" },
+  { name: "Linux", component: FaLinux, color: "#000000" },
+  { name: "Docker", component: FaDocker, color: "#0db7ed" },
+  { name: "AWS", component: FaAws, color: "#ff9900" },
+  { name: "Kubernetes", component: SiKubernetes, color: "#326ce5" },
 ];
-const TechIcons = () => {
+
+function TechIcons() {
   return (
     <div className="tech-icons-container">
-      {icons.map(({ name, component: IconComponent }) => (
-        <div key={name} className="tech-icon">
+      {icons.map(({ name, component: IconComponent, color }) => (
+        <div key={name} className="tech-icon" style={{ "--icon-color": color }}>
           <IconComponent size={30} />
           <p>{name}</p>
         </div>
       ))}
     </div>
   );
-};
+}
 
 export default TechIcons;
