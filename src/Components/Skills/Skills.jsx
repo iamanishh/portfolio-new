@@ -20,10 +20,10 @@ const Skills = () => {
       <div className="container skill">
         <div className="heading">
           <p className="tiny"> &lt; Skills &gt;</p>
-          <h2 className="boldFont">
+          <p className="boldFont">
             Skills I possess as a <br />
             specialist
-          </h2>
+          </p>
         </div>
         <div className="skill__content">
           <div className="desc">
