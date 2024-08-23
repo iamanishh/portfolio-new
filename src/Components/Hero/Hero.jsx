@@ -6,8 +6,8 @@ import resume from "../../assets/images/resume.pdf";
 
 import { MdOutlineFileDownload } from "react-icons/md";
 import { CiLocationArrow1 } from "react-icons/ci";
-import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
+import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 const socialLinks = [
   { href: "https://github.com/iamanishh", icon: <FaGithub /> },
   { href: "https://linkedin.com/in/iamanishh", icon: <FaLinkedinIn /> },

@@ -1,7 +1,7 @@
 import React from "react";
 import "./skills.scss";
-import { techImages } from "../../data/data";
 import { SiTicktick } from "react-icons/si";
+import TechIcons from "./TechIcons";
 
 const skillsList = [
   "Backend development with Java and Spring Boot",
@@ -10,8 +10,8 @@ const skillsList = [
   "RESTful API design and implementation",
   "Cloud services and deployment with AWS",
   "Containerization and orchestration with Docker & Kubernetes",
-  "Continuous Integration/Continuous Deployment (CI/CD)",
-  "Version control with Git and GitHub",
+  // "Continuous Integration/Continuous Deployment (CI/CD)",
+  // "Version control with Git and GitHub",
 ];
 
 const Skills = () => {
@@ -34,11 +34,7 @@ const Skills = () => {
             </ul>
           </div>
           <div className="images">
-            {techImages.map((image, index) => (
-              <div className="techImg" key={index}>
-                <img src={image} alt="tech-img" width={50} />
-              </div>
-            ))}
+            <TechIcons />
           </div>
         </div>
       </div>
