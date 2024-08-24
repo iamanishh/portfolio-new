@@ -30,7 +30,6 @@ const Skills = () => {
             <ul>
               {skillsList.map((skill, index) => (
                 <div className="list">
-                  {/* <SiTicktick className="tick" /> */}
                   <IoMdCheckmark className="tick" />
                   <li key={index}> {skill} </li>
                 </div>

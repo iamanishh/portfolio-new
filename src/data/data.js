@@ -23,12 +23,6 @@ export const projects = [
     description:
       "A web application which adapts seamlessly to any device ensuring a smooth and enjoyable browsing experience for all sushi enthusiasts.",
   },
-  {
-    title: "Bank",
-    technology: "java, springboot, api",
-    description:
-      "This is a banking application which involves creating a robust backend system that allows users to create and manage their accounts.",
-  },
 ];
 
 export const links = [
