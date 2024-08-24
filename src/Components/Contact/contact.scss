@@ -107,6 +107,8 @@
         }
       }
     }
+
+    
   }
 
   @media (max-width: 1024px) {
@@ -130,8 +132,7 @@
 
       &-right {
         gap: 2rem;
-        // padding-bottom: 2rem;
-        // border-bottom: 1px solid #bbb;
+        
       }
 
       &-left,
@@ -148,6 +149,3 @@
   }
 }
 
-* {
-  // outline: 1px solid red;
-}

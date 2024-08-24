@@ -1,6 +1,6 @@
 import React from "react";
 import "./skills.scss";
-import { SiTicktick } from "react-icons/si";
+import { IoMdCheckmark } from "react-icons/io";
 import TechIcons from "./TechIcons";
 
 const skillsList = [
@@ -30,7 +30,8 @@ const Skills = () => {
             <ul>
               {skillsList.map((skill, index) => (
                 <div className="list">
-                  <SiTicktick className="tick" />
+                  {/* <SiTicktick className="tick" /> */}
+                  <IoMdCheckmark className="tick" />
                   <li key={index}> {skill} </li>
                 </div>
               ))}

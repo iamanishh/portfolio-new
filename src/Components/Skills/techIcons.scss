@@ -1,26 +1,32 @@
 :root {
   --icon-color: #666666;
 }
+
 .tech-icons-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 15px;
   padding: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.icon-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
   .tech-icon {
-    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    gap: 5px;
+
     background-color: #ffffff;
+    border-radius: 20px;
+    padding: 5px 15px;
 
-    border-radius: 5px;
     box-shadow: 0 2px 4px #7a7a7a1a;
-
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-    animation: pulse 3s infinite;
-    padding: 5px;
 
     &:hover {
       transform: scale(1.05);
@@ -39,7 +45,7 @@
       font-size: 14px;
       font-weight: 600;
       color: #333333;
-      transition: color 0.3s;
+      line-height: 1;
       white-space: nowrap;
     }
   }

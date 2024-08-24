@@ -48,12 +48,27 @@ const icons = [
 ];
 
 function TechIcons() {
+  const rows = [
+    icons.slice(0, 4),
+    icons.slice(4, 8),
+    icons.slice(8, 12),
+    icons.slice(12, 18),
+  ];
+
   return (
     <div className="tech-icons-container">
-      {icons.map(({ name, component: IconComponent, color }) => (
-        <div key={name} className="tech-icon" style={{ "--icon-color": color }}>
-          <IconComponent size={30} />
-          <p>{name}</p>
+      {rows.map((row, index) => (
+        <div key={index} className="icon-row">
+          {row.map(({ name, component: IconComponent, color }) => (
+            <div
+              key={name}
+              className="tech-icon"
+              style={{ "--icon-color": color }}
+            >
+              <IconComponent size={15} />
+              <p>{name}</p>
+            </div>
+          ))}
         </div>
       ))}
     </div>
