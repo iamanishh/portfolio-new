@@ -33,11 +33,17 @@
       overflow: hidden;
 
       h3 {
-        border-bottom: 1px solid #f3f3f3;
+        width: fit-content;
         padding-bottom: 5px;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 25px;
-        font-weight: 600;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        font-weight: 500;
+        padding: 0 7px;
+        color: gray;
+        background-color: #f3f3f7;
+        letter-spacing: 0.01em;
       }
       .intro {
         padding-top: 0.5rem;
