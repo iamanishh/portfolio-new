@@ -5,13 +5,11 @@ import {
   FaReact,
   FaDocker,
   FaAws,
-  FaGit,
   FaGithub,
   FaLinux,
   FaHtml5,
   FaCss3Alt,
   FaJs,
-  FaDatabase,
 } from "react-icons/fa";
 import {
   SiSpring,
@@ -21,6 +19,7 @@ import {
   SiRedis,
   SiApachekafka,
   SiKubernetes,
+  SiMysql,
 } from "react-icons/si";
 
 const icons = [
@@ -28,18 +27,14 @@ const icons = [
   { name: "Spring", component: SiSpring, color: "#6db33f" },
   { name: "Spring Boot", component: SiSpringboot, color: "#6db33f" },
   { name: "Hibernate", component: SiHibernate, color: "#6f4f28" },
-
   { name: "React", component: FaReact, color: "#61dafb" },
   { name: "JavaScript", component: FaJs, color: "#f7e02f" },
   { name: "HTML5", component: FaHtml5, color: "#e34c26" },
   { name: "CSS3", component: FaCss3Alt, color: "#1572b6" },
-
-  { name: "Database", component: FaDatabase, color: "#003b6f" },
+  { name: "MySQL", component: SiMysql, color: "#003b6f" },
   { name: "MongoDB", component: SiMongodb, color: "#47a248" },
   { name: "Redis", component: SiRedis, color: "#d73a4a" },
   { name: "Kafka", component: SiApachekafka, color: "#231f20" },
-
-  { name: "Git", component: FaGit, color: "#f05032" },
   { name: "GitHub", component: FaGithub, color: "#181717" },
   { name: "Linux", component: FaLinux, color: "#000000" },
   { name: "AWS", component: FaAws, color: "#ff9900" },
@@ -47,7 +42,7 @@ const icons = [
   { name: "Kubernetes", component: SiKubernetes, color: "#326ce5" },
 ];
 
-function TechIcons() {
+function TechIcons({ rowsToShow }) {
   const rows = [
     icons.slice(0, 4),
     icons.slice(4, 8),
@@ -57,18 +52,24 @@ function TechIcons() {
 
   return (
     <div className="tech-icons-container">
-      {rows.map((row, index) => (
-        <div key={index} className="icon-row">
-          {row.map(({ name, component: IconComponent, color }) => (
-            <div
-              key={name}
-              className="tech-icon"
-              style={{ "--icon-color": color }}
-            >
-              <IconComponent size={15} />
-              <p>{name}</p>
-            </div>
-          ))}
+      {rowsToShow.map((rowIndex) => (
+        <div
+          key={rowIndex}
+          className={`icon-row row-${rowIndex}`}
+          style={{ animationDelay: `${rowIndex * 5}s` }}
+        >
+          {rows[rowIndex]
+            .concat(rows[rowIndex])
+            .map(({ name, component: IconComponent, color }) => (
+              <div
+                key={name}
+                className="tech-icon"
+                style={{ "--icon-color": color }}
+              >
+                <IconComponent size={30} />
+                <p>{name}</p>
+              </div>
+            ))}
         </div>
       ))}
     </div>

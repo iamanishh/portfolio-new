@@ -14,12 +14,18 @@
     width: 20%;
 
     .heading {
+      .p-title {
+        display: flex;
+        gap: 1rem;
+      }
       h3 {
         font-weight: 800;
       }
       p {
         margin-top: 8px;
         line-height: 1.1;
+        font-size: 0.925rem;
+        color: #969696;
       }
     }
   }
@@ -37,15 +43,16 @@
 
         &-title {
           margin-bottom: 0;
+          font-size: 1.4rem;
+          font-weight: 600;
         }
         .image {
-          // height: 300px;
-
+          height: 350px;
           img {
             width: 100%;
             height: 100%;
-            border-radius: 12px;
-            object-fit: contain;
+            border-radius: 7px 7px 0 0;
+            object-fit: cover;
           }
         }
 
@@ -77,6 +84,7 @@
         }
         .git {
           color: #a0a0a0;
+          padding-left: 8px;
         }
       }
 
@@ -97,10 +105,17 @@
   @media screen and (max-width: 540px) {
     .project-cards {
       grid-template-columns: 1fr;
+      gap: 2.5rem;
     }
   }
 }
 
 * {
   // outline: 1px solid red;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 1;
+  font-weight: 500;
 }

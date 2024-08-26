@@ -9,19 +9,19 @@ export const projects = [
     title: "Ecommerce",
     technology: "react, stripe, strapi",
     description:
-      "An online shopping platform with features of secure payment and seamless data management to ensure smooth user experience.",
+      "An online shopping platform with secure payment and seamless data management.",
   },
   {
     title: "Admin Dashboard",
     technology: "react, recharts",
     description:
-      "An interactive React Admin Dashboard utilizing data visualization tools to deliver real-time insights, enhancing user experience",
+      "An interactive React Admin Dashboard utilizing data visualization tools for real-time insights",
   },
   {
     title: "Sushi",
     technology: "html, css, javascript",
     description:
-      "A web application which adapts seamlessly to any device ensuring a smooth and enjoyable browsing experience for all sushi enthusiasts.",
+      "A web application with a smooth and enjoyable browsing experience for all sushi enthusiasts.",
   },
 ];
 

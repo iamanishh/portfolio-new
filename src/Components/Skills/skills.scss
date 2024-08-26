@@ -1,68 +1,72 @@
 #skill {
-  // padding: 4rem 0;
   background-color: #fcfbfd;
 }
 
 .skill {
   display: flex;
-  flex-direction: column;
-
+  justify-content: space-between;
   gap: 2rem;
-  padding-inline: 3rem;
+
+  &__heading {
+    width: 25%;
+  }
 
   &__content {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 
-    .desc {
-      width: 40%;
+    .card {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      padding: 1rem 0.5rem;
+      border-radius: 10px;
+      gap: 0.8rem;
+      border: 1px solid #fcfbfd;
+      overflow: hidden; // Hide any overflow content
 
-      ul {
-        list-style: none;
-        padding: 0;
+      .head {
+        display: flex;
+        align-items: center;
+        gap: 5px;
 
-        .list {
-          display: flex;
-          align-items: flex-start;
-          margin-bottom: 1rem;
-          font-size: 1.1rem;
+        .tech {
+          background-color: #f0efef;
+          padding: 3px;
+          font-size: 1.3rem;
+          border: 1px solid #e2e2e2;
+          border-radius: 5px;
+        }
 
-          .tick {
-            color: #4caf50;
-            margin-right: 0.5rem;
-          }
+        h3 {
+          flex-grow: 1;
+          line-height: 1;
+          font-size: 18px;
+          line-height: 25px;
+          font-weight: 600;
         }
       }
-    }
 
-    .images {
-      width: 45%;
-      // background-color: gainsboro;
-    }
-
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-
-      .desc,
-      .images {
-        width: 100%;
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
       }
+    }
+
+    @media screen and (max-width: 540px) {
+      grid-template-columns: 1fr;
     }
   }
 
   @media screen and (max-width: 768px) {
-    padding-inline: 2rem;
-  }
+    flex-direction: column;
 
-  @media screen and (max-width: 540px) {
-    padding-inline: 0;
+    &__heading,
+    &__content {
+      width: 100%;
+    }
   }
-}
-
-.boldFont {
-  font-size: 1.8rem;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: 0.01em;
 }

@@ -1,10 +1,8 @@
 import React from "react";
 import "./projectcard.scss";
 import { projects } from "../../data/data";
-
+import capture from "../../assets/images/sushi3.jpg";
 import { ImArrowUpRight2 } from "react-icons/im";
-
-import capture from "../../assets/images/ecommerce.avif";
 
 const ProjectCard = () => {
   return (
@@ -12,9 +10,9 @@ const ProjectCard = () => {
       <div className=" container project">
         <div className="project__top">
           <div className="heading">
-            <p className="tiny">projects</p>
-            <h3>Peek into my latest projects</h3>
-
+            <div className="p-title">
+              <h3 className="text-3xl">My Projects</h3>
+            </div>
             <p>
               Here are some of the current projects I've been working on. I'm
               always working on something new, so check back often!
@@ -32,7 +30,7 @@ const ProjectCard = () => {
 
                 <div className="desc-box">
                   <div className="fbet">
-                    <h3 className="card-title">{project.title}</h3>
+                    <h3 className="card-title text-2xl">{project.title}</h3>
                     <p className="technology">{project.technology}</p>
                   </div>
                   <div className="fbet">
