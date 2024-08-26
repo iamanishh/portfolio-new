@@ -36,7 +36,6 @@ const Skills = () => {
               <div className="head">
                 <Icon className="tech" />
                 <h3>{title}</h3>
-                <img src={spoiler} alt="img" width={50} />
               </div>
               <p>{intro}</p>
               <TechIcons rowsToShow={rowsToShow} />
