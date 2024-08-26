@@ -10,7 +10,7 @@ const Skills = () => {
     {
       id: 1,
       Icon: PiBracketsCurlyBold,
-      title: "Languages and Frameworks",
+      title: " { Languages and Frameworks }",
       intro:
         "This is where I spend most of time I enjoy working with APIs, implementing business logic and optimising data processing.",
       rowsToShow: [0, 1],
@@ -19,7 +19,7 @@ const Skills = () => {
     {
       id: 2,
       Icon: HiMiniCodeBracket,
-      title: "Tools and Technologies",
+      title: "{ Tools and Technologies }",
       intro:
         "These are some of the additional tools and technologies I frequently use to propel my development.",
       rowsToShow: [2, 3],
@@ -34,7 +34,7 @@ const Skills = () => {
           {skills.map(({ id, Icon, title, intro, rowsToShow }) => (
             <div key={id} className="card">
               <div className="head">
-                <Icon className="tech" />
+                {/* <Icon className="tech" /> */}
                 <h3>{title}</h3>
               </div>
               <p>{intro}</p>
