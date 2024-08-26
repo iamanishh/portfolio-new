@@ -66,7 +66,7 @@ function TechIcons({ rowsToShow }) {
                 className="tech-icon"
                 style={{ "--icon-color": color }}
               >
-                <IconComponent size={22} />
+                <IconComponent size={20} />
                 <p>{name}</p>
               </div>
             ))}
