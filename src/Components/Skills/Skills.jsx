@@ -8,7 +8,7 @@ const Skills = () => {
     {
       id: 1,
 
-      title: "Languages and Frameworks",
+      title: "#Languages/ Library/ Frameworks",
       intro:
         "This is where I spend most of time working with APIs, implementing business logic and optimising data processing.",
       rowsToShow: [0, 1],
@@ -17,7 +17,7 @@ const Skills = () => {
     {
       id: 2,
 
-      title: "Tools and Technologies",
+      title: "#Tools & Technologies",
       intro:
         "These are some of the additional tools and technologies I frequently use to propel my development.",
       rowsToShow: [2, 3],
