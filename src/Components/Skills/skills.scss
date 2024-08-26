@@ -11,6 +11,13 @@
   &__heading {
     width: 20%;
 
+    img {
+      border: 1px solid #ccc;
+      background-color: #ffedca;
+      padding: 2px;
+      border-radius: 5px;
+    }
+
     h4 {
       font-weight: 600;
       line-height: 1;
@@ -35,15 +42,14 @@
       h3 {
         width: fit-content;
         padding-bottom: 5px;
-        font-size: 14px;
-        line-height: 25px;
+        font-size: 0.875rem;
+
         border: 1px solid #ccc;
         border-radius: 20px;
         font-weight: 500;
-        padding: 0 7px;
+        padding: 3px 7px;
         color: gray;
         background-color: #f3f3f7;
-        letter-spacing: 0.01em;
       }
       .intro {
         padding-top: 0.5rem;
@@ -51,7 +57,7 @@
       }
 
       p {
-        font-size: 14px;
+        font-size: 1rem;
         line-height: 20px;
         font-weight: 300;
       }

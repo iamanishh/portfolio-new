@@ -10,7 +10,7 @@ const Skills = () => {
 
       title: "Languages and Frameworks",
       intro:
-        "This is where I spend most of time I enjoy working with APIs, implementing business logic and optimising data processing.",
+        "This is where I spend most of time working with APIs, implementing business logic and optimising data processing.",
       rowsToShow: [0, 1],
     },
 
