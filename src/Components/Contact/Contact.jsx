@@ -20,6 +20,7 @@ const Contact = () => {
     <section id="contact">
       <div className="container contact">
         <div className="contact__header">
+          <p className="t-top">Contact</p>
           <h2>Interested in talking,</h2>
           <h2>let’s do it.</h2>
           <p>

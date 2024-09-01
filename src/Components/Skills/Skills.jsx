@@ -29,7 +29,7 @@ const Skills = () => {
       <div className="container skill">
         <div className="skill__heading">
           <img src={skillImg} alt="skill-img" width={25} />
-          <h4>Skills and Experiences</h4>
+          <h2>Skills and Experiences</h2>
         </div>
         <div className="skill__content">
           {skills.map(({ id, title, intro, rowsToShow }) => (

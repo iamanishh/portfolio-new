@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container header">
         <div className="logo">
           <a href="/">
-            Manish <span>.</span>
+            Manish <span></span>
           </a>
         </div>
 

@@ -1,75 +1,138 @@
 #about {
-  background-color: #fff;
+  background-color: #f8f8f8;
 }
 
 .about {
-  // background-color: #fff;
-  padding-block: 5rem;
+  // background-color: #f3f2f7;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+
+  &__heading {
+    width: 20%;
+  }
 
   &__content {
+    width: 80%;
     display: flex;
-    max-width: 80%;
-    margin: 0 auto;
+    flex-direction: column;
+    gap: 3rem;
 
-    .left {
-      width: 67%;
-    }
+    .intro {
+      .subhead {
+        // display: flex;
+        // justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 3rem;
 
-    .right {
-      width: 20%;
-      margin-left: 13%;
-
-      display: flex;
-      flex-direction: column;
-
-      p {
-        margin-bottom: 5rem;
+        .ind {
+          width: 130px;
+          font-weight: 500;
+          line-height: 1;
+          font-size: 1.1rem;
+          letter-spacing: -0.03em;
+          padding-bottom: 1rem;
+        }
       }
 
-      button {
-        color: #ccc;
-        font-size: 1rem;
-        margin-left: 1rem;
+      &-desc {
+        font-size: 1.1rem;
+
+        width: 60%;
+        line-height: 1.1;
       }
     }
 
-    @media (max-width: 768px) {
-      flex-direction: column;
+    .tech {
+      background-color: #fcfbfd;
+      border-radius: 15px;
+      padding: 15px 10px;
 
-      .left,
-      .right {
+      &__cont {
+        width: 60%;
+        padding-top: 10px;
+      }
+    }
+    .experience {
+      background-color: #fcfbfd;
+      border-radius: 15px;
+      padding: 15px 10px;
+
+      .exp {
+        width: 60%;
+        padding-top: 10px;
+
+        .exp-details {
+          // margin-bottom: 15px;
+
+          .company,
+          .position {
+            font-size: 18px;
+            font-weight: 500;
+            color: #333333;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 5px;
+
+            span {
+              font-size: 12px;
+              font-weight: 400;
+              color: #666666;
+            }
+          }
+        }
+
+        .description {
+          font-size: 16px;
+          color: #555555;
+          line-height: 1.6;
+        }
+      }
+    }
+
+    @media screen and (max-width: 540px) {
+      .tech,
+      .experience {
         width: 100%;
-        padding: 0;
-      }
-
-      .right {
-        flex-direction: row;
-        justify-content: space-between;
-
-        margin-left: 0;
-        margin-top: 1rem;
-
-        p {
-          width: 60%;
-          margin-bottom: 3rem;
-        }
-
-        button {
-          display: flex;
-          position: relative;
-
-          margin-block: 2rem;
-        }
-      }
-    }
-
-    @media (max-width: 512px) {
-      max-width: 100%;
-      .right {
-        button {
-          margin-top: 3rem;
-        }
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    &__heading,
+    &__content {
+      width: 100%;
+    }
+
+    .intro {
+      &-desc {
+        width: 100%;
+      }
+      .subhead {
+        margin-top: 1.5rem;
+        .ind {
+          width: 100%;
+        }
+      }
+    }
+
+    .tech {
+      &__cont {
+        width: 100%;
+      }
+    }
+
+    .experience {
+      .exp {
+        width: 100%;
+      }
+    }
+  }
+}
+
+* {
+  // outline: 1px solid red;
 }

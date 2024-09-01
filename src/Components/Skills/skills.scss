@@ -1,6 +1,6 @@
 #skill {
   // background-color: #fdfdfd;
-  background-color: white;
+  background-color: #fdfdfd;
 }
 
 .skill {
@@ -33,9 +33,11 @@
     .card {
       display: flex;
       flex-direction: column;
-      background-color: #fbfbfa;
+      // background-color: #fafbfa;
+      background-color: #f9f9f9;
       // background-color: #fbfcfd;
-      padding: 1.3rem 0.5rem;
+      padding: 1.5rem 0.5rem 1.8rem 0.5rem;
+
       border-radius: 5px;
 
       overflow: hidden;

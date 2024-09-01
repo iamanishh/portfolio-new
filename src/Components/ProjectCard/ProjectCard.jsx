@@ -29,16 +29,16 @@ const ProjectCard = () => {
                 </div>
 
                 <div className="desc-box">
+                  <h3 className="card-title text-2xl">{project.title}</h3>
                   <div className="fbet">
-                    <h3 className="card-title text-2xl">{project.title}</h3>
                     <p className="technology">{project.technology}</p>
+                    <p className="desc-sm">March 2024</p>
                   </div>
-                  <div className="fbet">
-                    <p className="description">{project.description}</p>
-                    <div className="git">
-                      <ImArrowUpRight2 />
-                    </div>
-                  </div>
+                  <p className="desc-md">{project.description}</p>
+                  <p className="t-top bt">
+                    Know more &nbsp;
+                    <ImArrowUpRight2 />
+                  </p>
                 </div>
               </div>
             ))}

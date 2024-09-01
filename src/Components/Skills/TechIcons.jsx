@@ -33,6 +33,7 @@ const icons = [
   { name: "CSS3", component: FaCss3Alt, color: "#1572b6" },
   { name: "MySQL", component: SiMysql, color: "#003b6f" },
   { name: "MongoDB", component: SiMongodb, color: "#47a248" },
+
   { name: "Redis", component: SiRedis, color: "#d73a4a" },
   { name: "Kafka", component: SiApachekafka, color: "#231f20" },
   { name: "GitHub", component: FaGithub, color: "#181717" },

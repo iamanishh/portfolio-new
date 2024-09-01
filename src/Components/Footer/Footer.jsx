@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="f-left">
             <div className="logo">
               <a href="/">
-                Manish <span>.</span>
+                Manish <span></span>
               </a>
               <p className="tinyy">
                 Behind Every Great Application <br />
