@@ -36,7 +36,7 @@ const ProjectCard = () => {
                   </div>
                   <p className="desc-md">{project.description}</p>
                   <p className="t-top bt">
-                    Know more &nbsp;
+                    View details &nbsp;
                     <ImArrowUpRight2 />
                   </p>
                 </div>

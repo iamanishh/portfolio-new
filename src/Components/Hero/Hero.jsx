@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <section id="hero">
       <div className="container hero">
-        <div className="hero__content flex-c">
+        <div className="hero__content ">
           <img src="/hero-image.svg" alt="Profile" width={110} />
           <p className="desc">Hi, I'm Manish Kumar.</p>
 

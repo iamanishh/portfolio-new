@@ -4,13 +4,12 @@
 
 .hero {
   // height: calc(90vh - 70px);
-  // background-image: url("https://cdn.prod.website-files.com/66b9d852c65755b8a92ae92b/66b9d852c65755b8a92ae939_Background%20Mesh.png");
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // position: relative;
 
   &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
     text-align: center;
 

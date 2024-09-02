@@ -16,6 +16,8 @@ const About = () => {
             <h1 className="title2">Aware of the accomplishments,</h1>
             <h1 className="title2">awake to achieve more.</h1>
 
+            <img className="introImg" src="./laptop.jpg" alt="" />
+
             <div className="subhead flex-r">
               <p className="ind">I thrive with shared efforts.</p>
 

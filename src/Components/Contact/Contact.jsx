@@ -21,8 +21,8 @@ const Contact = () => {
       <div className="container contact">
         <div className="contact__header">
           <p className="t-top">Contact</p>
-          <h2>Interested in talking,</h2>
-          <h2>let’s do it.</h2>
+          <h2 className="title2">Interested in talking,</h2>
+          <h2 className="title2">let’s do it.</h2>
           <p>
             I am always open to discuss or collaborate for any interesting
             projects &nbsp;
