@@ -66,13 +66,13 @@ const About = () => {
               I'm a backend developer with expertise in Java, Spring Boot, and
               React. My skills include:
             </p>
-            <ul className="skills-list">
+            {/* <ul className="skills-list">
               <li>Creating end-to-end solutions</li>
               <li>Working with relational databases</li>
               <li>Building RESTful APIs</li>
               <li>Implementing microservices architecture</li>
               <li>Using Docker and Kubernetes</li>
-            </ul>
+            </ul> */}
           </div>
 
           <div className="tech">
