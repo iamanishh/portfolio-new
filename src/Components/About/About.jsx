@@ -1,77 +1,122 @@
 import React from "react";
 import "./about.scss";
-import TechIcons from "../Skills/TechIcons";
+import {
+  FaJava,
+  FaReact,
+  FaDocker,
+  FaAws,
+  FaGithub,
+  FaLinux,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+} from "react-icons/fa";
+
+import {
+  SiSpring,
+  SiSpringboot,
+  SiHibernate,
+  SiMongodb,
+  SiRedis,
+  SiApachekafka,
+  SiKubernetes,
+  SiMysql,
+} from "react-icons/si";
 
 const About = () => {
-  const rowsToShow = [0, 1, 2, 3];
+  // Icons for languages, libraries, frameworks
+  const languagesLibraries = [
+    <FaJava />,
+    <SiSpring />,
+    <SiSpringboot />,
+    <SiHibernate />,
+    <FaReact />,
+    <FaJs />,
+    <FaHtml5 />,
+    <FaCss3Alt />,
+  ];
+
+  // Icons for tools and technologies
+  const toolsTechnologies = [
+    <SiMysql />,
+    <SiMongodb />,
+    <SiRedis />,
+    <SiApachekafka />,
+    <FaGithub />,
+    <FaLinux />,
+    <FaDocker />,
+    <SiKubernetes />,
+    <FaAws />,
+  ];
+
   return (
     <section id="about">
-      <div className="container about ">
-        <div about__heading>
-          <p className=" t-top">About me</p>
+      <div className="container about">
+        <div className="about-heading">
+          <p className="section-title t-top">About Me</p>
         </div>
 
-        <div className="about__content">
+        <div className="about-content">
           <div className="intro">
-            <h1 className="title2">Aware of the accomplishments,</h1>
-            <h1 className="title2">awake to achieve more.</h1>
-
-            <img className="introImg" src="./laptop.jpg" alt="" />
-
-            <div className="subhead flex-r">
-              <p className="ind">I thrive with shared efforts.</p>
-
-              <p className="intro-desc desc-md">
-                I'm a Software developer specializing in backend development
-                with Java, Spring, and Spring Boot, React. I have a strong
-                foundation in relational databases and RESTful APIs, allowing me
-                to design and implement end-to-end solutions effectively.
-                <br />
-                <br />I thrive in collaborative environments and am dedicated to
-                continuous learning to stay ahead in the ever-evolving tech
-                landscape.
-                <br />
-                <br />
-                <p className="t-top">Get in touch</p>
-              </p>
-            </div>
+            <h2 className="intro-heading title2">
+              Aware of the accomplishments, <br />
+              awake to achieve more.
+            </h2>
+            <p className="intro-text">
+              I'm a backend developer with expertise in Java, Spring Boot, and
+              React. My skills include:
+            </p>
+            <ul className="skills-list">
+              <li>Creating end-to-end solutions</li>
+              <li>Working with relational databases</li>
+              <li>Building RESTful APIs</li>
+              <li>Implementing microservices architecture</li>
+              <li>Using Docker and Kubernetes</li>
+            </ul>
           </div>
 
-          <div className="tech flex-rr">
-            <p className="desc-md ">/TECKSTACK/</p>
-            <div className="tech__cont">
-              <p className=" desc-md">#Languages/ Libraries/ Frameworks</p>
-              <p>
-                Java, Spring Core, Spring Boot, Hibearnate, C/C++, Javascript,
-                Html, CSS, React.js, Node.js, MySql, MongoDB, Redis
-              </p>
-              <br />
+          <div className="tech">
+            <h3 className="section-subtitle">Tech Stack</h3>
+            <p>
+              <strong>Languages / Libraries / Frameworks:</strong> Java, Spring
+              Core, Spring Boot, Hibernate, C/C++, JavaScript, HTML, CSS,
+              React.js, Node.js, MySQL, MongoDB, Redis
+            </p>
+            <p>
+              <strong>Tools and Technologies:</strong> Git, GitHub, Linux,
+              Docker, Kubernetes, AWS
+            </p>
 
-              <p className=" desc-md">#Tools and Technologies</p>
-              <p>Git, GitHub, Linux, Docker, Kubernetes, AWS</p>
-            </div>
-
-            {/* <TechIcons rowsToShow={rowsToShow} className="techh" /> */}
-          </div>
-
-          <div className="experience flex-rr">
-            <p className="desc-md">/EXPERIENCE/</p>
-            <div className="exp">
-              <div className="exp-details">
-                <p className="company">
-                  Infosys Ltd
-                  <span>Bhubaneswar, Odisha</span>
-                </p>
-                <p className="position">
-                  System Engineer
-                  <span>March 2022 - Nov 2023</span>
-                </p>
+            <div className="tech-icons">
+              <div className="tech-row">
+                {languagesLibraries.map((icon, index) => (
+                  <div key={index} className="tech-icon">
+                    {icon}
+                  </div>
+                ))}
               </div>
-              <p className="description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Inventore itaque quod, doloribus vel impedit ipsam, nostrum
-                distinctio sapiente non velit quasi? Qui perferendis repudiandae
-                aliquid dolore similique neque iste. Autem!
+              <div className="tech-row">
+                {toolsTechnologies.map((icon, index) => (
+                  <div key={index} className="tech-icon">
+                    {icon}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="experience">
+            <h3 className="section-subtitle">Experience</h3>
+            <div className="experience-details">
+              <p>
+                <strong>System Engineer @ Infosys Ltd</strong>
+              </p>
+              <p className="experience-duration">March 2022 - Nov 2023</p>
+              <p className="experience-description">
+                Worked on various backend solutions, focusing on building
+                scalable microservices using Spring Boot. Collaborated with
+                cross-functional teams to deliver high-quality software
+                solutions.
               </p>
             </div>
           </div>

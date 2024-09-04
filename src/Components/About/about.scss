@@ -1,119 +1,106 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 #about {
-  background-color: #f8f8f8;
+  padding: 4rem 0;
+  background-color: #fcfbfd;
 }
 
 .about {
-  // background-color: #f3f2f7;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
 
-  &__heading {
-    width: 20%;
+  &-heading {
+    width: 30%;
   }
 
-  &__content {
-    width: 80%;
+  &-content {
+    width: 70%;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
 
-    .intro {
-      .introImg {
-        width: 100%;
-        padding-top: 1rem;
-        height: 300px;
-        filter: grayscale(1);
-        mask-image: linear-gradient(to right, transparent, black);
-
-        img {
-          object-fit: cover;
-        }
-      }
-
-      .subhead {
-        // display: flex;
-        // justify-content: space-between;
-        align-items: flex-start;
-        margin-top: 3rem;
-
-        .ind {
-          width: 130px;
-          font-weight: 500;
-          line-height: 1;
-          font-size: 1.1rem;
-          letter-spacing: -0.03em;
-          padding-bottom: 1rem;
-        }
-      }
-
-      &-desc {
-        font-size: 1.1rem;
-
-        width: 60%;
-        line-height: 1.1;
-      }
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+      padding-left: 1rem;
     }
 
-    .tech {
-      background-color: #fcfbfd;
-      border-radius: 15px;
-      padding: 15px 10px;
-
-      &__cont {
-        width: 60%;
-        padding-top: 10px;
-      }
+    .intro-heading {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #555;
     }
 
+    .intro-text {
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+
+    .skills-list {
+      padding-left: 1.5rem;
+      list-style-type: disc;
+      color: #666;
+      margin-top: 1rem;
+    }
+
+    .tech,
     .experience {
-      background-color: #fcfbfd;
-      border-radius: 15px;
-      padding: 15px 10px;
+      max-width: 750px;
+      // margin: 0 auto;
 
-      .exp {
-        width: 60%;
-        padding-top: 10px;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+    }
 
-        .exp-details {
-          // margin-bottom: 15px;
+    .section-subtitle {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.6rem;
+    }
 
-          .company,
-          .position {
-            font-size: 18px;
-            font-weight: 500;
-            color: #333333;
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-            margin-bottom: 5px;
+    .tech-icons {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
 
-            span {
-              font-size: 12px;
-              font-weight: 400;
-              color: #666666;
-            }
-          }
-        }
+      .tech-row {
+        display: flex;
+        justify-content: space-around;
+        gap: 1.5rem;
+        overflow: hidden;
 
-        .description {
-          font-size: 16px;
-          color: #555555;
-          line-height: 1.6;
+        .tech-icon {
+          font-size: 2rem;
+          color: #6e6e6e;
+          animation: scroll 10s linear infinite;
         }
       }
     }
 
-    @media screen and (max-width: 540px) {
-      .tech,
-      .experience {
-        width: 100%;
+    .experience-details {
+      .experience-duration {
+        font-size: 0.9rem;
+        color: #999;
+        margin-bottom: 0.5rem;
       }
 
-      .intro {
-        .introImg {
-          height: 200px;
-        }
+      .experience-description {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #555;
       }
     }
   }
@@ -121,37 +108,29 @@
   @media screen and (max-width: 768px) {
     flex-direction: column;
 
-    &__heading,
-    &__content {
+    &-heading,
+    &-content {
       width: 100%;
     }
 
-    .intro {
-      &-desc {
-        width: 100%;
-      }
-      .subhead {
-        margin-top: 1.5rem;
-        .ind {
-          width: 100%;
+    .skills-list {
+      padding-left: 1rem;
+    }
+
+    .tech-icons {
+      .tech-row {
+        justify-content: start;
+
+        .tech-icon {
+          margin-right: 2rem;
         }
       }
     }
-
-    .tech {
-      &__cont {
-        width: 100%;
-      }
-    }
-
+  }
+  @media screen and (max-width: 540px) {
+    .tech,
     .experience {
-      .exp {
-        width: 100%;
-      }
+      padding: 1rem 0.5rem;
     }
   }
-}
-
-* {
-  // outline: 1px solid red;
 }
