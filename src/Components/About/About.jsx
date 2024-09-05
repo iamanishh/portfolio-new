@@ -63,27 +63,31 @@ const About = () => {
               awake to achieve more.
             </h2>
             <p className="intro-text">
-              I'm a backend developer with expertise in Java, Spring Boot, and
-              React. My skills include:
+              "I am a software developer specializing in backend development
+              with hands-on experience in Java, Spring Boot, and React.
+              <br />
+              <br />
+              My expertise includes building APIs and working with relational
+              databases such as MySQL,along with various other technologies. My
+              skills include:
             </p>
-            {/* <ul className="skills-list">
-              <li>Creating end-to-end solutions</li>
-              <li>Working with relational databases</li>
-              <li>Building RESTful APIs</li>
-              <li>Implementing microservices architecture</li>
-              <li>Using Docker and Kubernetes</li>
-            </ul> */}
           </div>
 
           <div className="tech">
-            <h3 className="section-subtitle">Tech Stack</h3>
+            <p className="section-subtitle">Tech Stack</p>
             <p>
-              <strong>Languages / Libraries / Frameworks:</strong> Java, Spring
-              Core, Spring Boot, Hibernate, C/C++, JavaScript, HTML, CSS,
-              React.js, Node.js, MySQL, MongoDB, Redis
+              <strong>Frontend:- </strong> JavaScript, TypeScript, React.js,
+              Redux, HTML, CSS
             </p>
             <p>
-              <strong>Tools and Technologies:</strong> Git, GitHub, Linux,
+              <strong>Backend:- </strong> Java, Spring, Spring Boot, Hibernate,
+              Redis, Kafka
+            </p>
+            <p>
+              <strong>Databases:-</strong> MySQL, MongoDB,
+            </p>
+            <p>
+              <strong>Tools and Technologies:- </strong> Git, GitHub, Linux,
               Docker, Kubernetes, AWS
             </p>
 

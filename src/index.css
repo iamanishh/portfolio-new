@@ -145,6 +145,13 @@ section {
   font-weight: 400;
   letter-spacing: -0.01em;
 }
+.desc-md2 {
+  font-family: var(--font-secondary);
+  font-size: 0.875rem;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
 
 .desc-sm {
   font-family: var(--font-secondary);

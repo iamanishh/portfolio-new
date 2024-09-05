@@ -5,15 +5,19 @@
 .project {
   display: flex;
   justify-content: space-between;
+
+  gap: 3rem;
   position: relative;
   gap: 2.2rem;
 
   &__top {
     display: flex;
-    gap: 1rem;
-    width: 30%;
+    justify-content: space-between;
+    gap: 5rem;
+    width: 25%;
 
     .heading {
+      text-align: center;
       .p-title {
         display: flex;
         gap: 1rem;
@@ -27,36 +31,50 @@
         font-size: 0.925rem;
         color: #969696;
       }
+
+      .ImgHead {
+        // padding-top: 5rem;
+        margin-top: 1rem;
+        transform: rotate(-150deg);
+      }
     }
   }
   &__bottom {
+    padding-inline: 2rem;
+    margin-top: 7rem;
+
     width: 70%;
     .project-cards {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1.3rem;
 
       .card {
         display: flex;
         flex-direction: column;
         // padding: 10px;
-        background-color: #fff;
-
-        &-title {
-          margin-bottom: 0;
-          font-size: 1.4rem;
+        background-color: #f7f9fd;
+        padding: 1rem;
+        border-radius: 20px;
+        .desc-title {
+          padding: 5px 0;
           font-weight: 600;
         }
+
         .image {
           height: 250px;
           img {
             width: 100%;
             height: 100%;
-            border-radius: 7px 7px 0 0;
+            border-radius: 15px;
             object-fit: cover;
           }
         }
-
+        .projIcon {
+          width: 20px;
+          padding-top: 10px;
+          display: inline-block;
+        }
         .card-title {
           padding-top: 5px;
         }
@@ -100,6 +118,10 @@
     }
   }
   @media screen and (max-width: 540px) {
+    .project__bottom {
+      padding-inline: 0;
+    }
+
     .project-cards {
       grid-template-columns: 1fr;
       gap: 2.5rem;

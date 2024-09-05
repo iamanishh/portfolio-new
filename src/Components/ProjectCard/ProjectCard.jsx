@@ -17,6 +17,8 @@ const ProjectCard = () => {
               Here are some of the current projects I've been working on. I'm
               always working on something new, so check back often!
             </p>
+
+            <img src="./arrowe.png" alt="" className="ImgHead" />
           </div>
         </div>
 
@@ -29,13 +31,13 @@ const ProjectCard = () => {
                 </div>
 
                 <div className="desc-box">
-                  <h3 className="card-title text-2xl">{project.title}</h3>
+                  <h3 className="desc-title">{project.title}</h3>
                   <div className="fbet">
                     <p className="technology">{project.technology}</p>
                     <p className="desc-sm">March 2024</p>
                   </div>
-                  <p className="desc-md">{project.description}</p>
-                  <p className="t-top bt">
+                  <p className="desc-md2">{project.description}</p>
+                  <p className=" bt">
                     View details &nbsp;
                     <ImArrowUpRight2 />
                   </p>
