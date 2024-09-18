@@ -1,39 +1,19 @@
 #header {
-  position: relative;
-  height: 100px;
-  z-index: 1;
-  // background-color: #fffaeb;
-  background: linear-gradient(
-    90deg,
-    hsl(0, 0%, 94%) -100%,
-    hsl(0, 0%, 100%) 50%
-  );
-}
-
-#header::before {
-  content: "";
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 100px;
-  // background: linear-gradient(90deg, #9d5cff 0%, hsl(185, 100%, 70%) 100%);
-  background: linear-gradient(90deg, hsl(0, 0%, 87%) 0%, hsl(0, 0%, 91%) 100%);
-  border-radius: 50%;
-  filter: blur(30px);
-  z-index: -1;
-  opacity: 0.8;
+  height: 70px;
+  background-color: #fafafa;
+  background: blur(10px);
+
+  z-index: 10;
 }
 
 .header {
-  height: 100px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
-  position: relative;
 }
 
 .header .logo {
@@ -41,25 +21,13 @@
   font-weight: bold;
 }
 
-.header .links {
-  border: 1px solid #ccc;
-  padding: 0.6rem 1.5rem;
-  border-radius: 3rem;
-
-  ul {
-    display: flex;
-    gap: 1.2rem;
-    list-style: none;
-  }
+.header .links ul {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
 }
 
-.header .menu {
-  z-index: 10;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .header .links {
-    display: none;
-  }
+.header .links a {
+  text-decoration: none;
+  color: inherit; // Use the same color as parent text
 }
