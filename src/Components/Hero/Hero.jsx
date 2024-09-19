@@ -20,14 +20,21 @@ const Hero = () => {
 
           <h2 className="title">Behind-the-scenes architect</h2>
           <p className="name">
-            I am a backend developer with nearly 2 years of working experience
-            in Java, Spring Boot and React.
+            {/* I am a backend developer with nearly 2 years of working experience
+            in Java, Spring Boot and React. */}
+            I specialize in crafting scalable backend solutions with
+            <strong> Java </strong> and <strong>Spring Boot</strong> ⚙️,
+            <br />
+            building efficient <strong> APIs </strong> and
+            <strong> microservices </strong>🛠️, while also proficient in
+            creating seamless applications with
+            <strong> React</strong> 💻.
           </p>
-          <p className="name">
+          {/* <p className="name">
             Building robust systems ⚙️, optimizing performance ⚡,
             <br />
             and solving complex problems with clean, scalable code 💻.
-          </p>
+          </p> */}
 
           <div className="hero-btn">
             <a href="#projects">See my work &nbsp;</a>

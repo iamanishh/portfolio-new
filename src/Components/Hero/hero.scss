@@ -2,13 +2,7 @@
   // background-color: #fafaf9;
   // background-color: #f9f3e8;
 
-  // background-image: linear-gradient(to bottom, #eff6ff, #fee2e2);
-
-  background: url("https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  // background: url("./landing.avif");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: linear-gradient(to bottom, #eff6ff, #fee2e2);
 }
 
 .hero {
@@ -28,6 +22,14 @@
     img {
       object-fit: cover;
       filter: grayscale(90%);
+    }
+
+    .name {
+      font-size: 1.2rem;
+
+      strong {
+        color: #534949;
+      }
     }
 
     .hero-btn {
