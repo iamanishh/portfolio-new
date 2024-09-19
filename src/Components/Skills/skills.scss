@@ -67,11 +67,6 @@
         line-height: 1.25;
         color: #555;
         white-space: nowrap;
-
-        @media screen and (max-width: 576px) {
-          font-size: 0.75rem;
-          line-height: 1;
-        }
       }
     }
   }

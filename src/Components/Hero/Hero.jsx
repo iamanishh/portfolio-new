@@ -22,19 +22,19 @@ const Hero = () => {
           <p className="name">
             {/* I am a backend developer with nearly 2 years of working experience
             in Java, Spring Boot and React. */}
-            I specialize in crafting scalable backend solutions with
-            <strong> Java </strong> and <strong>Spring Boot</strong> ⚙️,
-            <br />
-            building efficient <strong> APIs </strong> and
-            <strong> microservices </strong>🛠️, while also proficient in
-            creating seamless applications with
+            I specialize in crafting scalable backend solutions 🛠️with
+            <strong> Java </strong> and <strong> Spring Boot </strong> ⚙️, while
+            also building seamless applications with
             <strong> React</strong> 💻.
           </p>
+
           {/* <p className="name">
+          , efficient APIs
+            🛠️, and microservices
             Building robust systems ⚙️, optimizing performance ⚡,
             <br />
             and solving complex problems with clean, scalable code 💻.
-          </p> */}
+          </p>  */}
 
           <div className="hero-btn">
             <a href="#projects">See my work &nbsp;</a>
