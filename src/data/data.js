@@ -26,7 +26,7 @@ export const projects = [
 ];
 
 export const links = [
-  { name: "about", href: "#about" },
-  { name: "skills", href: "#skills" },
-  { name: "projects", href: "#project" },
+  { name: "about", href: "about" },
+  { name: "projects", href: "work" },
+  { name: "contact", href: "contact" },
 ];

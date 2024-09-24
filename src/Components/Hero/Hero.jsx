@@ -14,19 +14,31 @@ const Hero = () => {
     <section id="hero">
       <div className="container hero">
         <div className="hero__content ">
-          <img src="/hero-image.svg" alt="Profile" width={110} />
+          {/* <img src="/hero-image.svg" alt="Profile" width={110} /> */}
 
-          <p>Hi, I'm Manish &nbsp; </p>
+          <div className="left">
+            <h1 className="section-heading">
+              Hey! /’m Manish
+              <br /> A <span className="curs">Software developer</span>
+            </h1>
+          </div>
 
-          <h2 className="title">Behind-the-scenes architect</h2>
-          <p className="name">
-            {/* I am a backend developer with nearly 2 years of working experience
-            in Java, Spring Boot and React. */}
-            I specialize in crafting scalable backend solutions 🛠️with
-            <strong> Java </strong> and <strong> Spring Boot </strong> ⚙️, while
-            also building seamless applications with
-            <strong> React</strong> 💻.
-          </p>
+          <div className="right">
+            <p className="text2">
+              Passionate behind-the-scenes architect, specializing in backend
+              engineering with Java and Spring Boot.
+              {/* Passionate backend engineer specializing in (Java, Spring Boot).
+              Skilled in designing and implementing robust APIs and
+              microservices. Experienced in working with databases and cloud
+              platforms */}
+              {/* I specialize in crafting scalable backend solutions 🛠️with
+              <strong> Java </strong> and <strong> Spring Boot </strong> ⚙️,
+              while also building seamless applications with
+              <strong> React</strong> 💻. */}
+            </p>
+          </div>
+
+          {/* . */}
 
           {/* <p className="name">
           , efficient APIs
@@ -35,21 +47,11 @@ const Hero = () => {
             <br />
             and solving complex problems with clean, scalable code 💻.
           </p>  */}
-
-          <div className="hero-btn">
-            <a href="#projects">See my work &nbsp;</a>
-            <a href="#contact">
-              Contact &nbsp;
-              <CiLocationArrow1 />
-            </a>
-          </div>
-          <div className="hero-social">
-            {socialLinks.map((social, index) => (
-              <a key={index} href={social.href} target="_blank">
-                {social.icon}
-              </a>
-            ))}
-          </div>
+        </div>
+        <div className="button">
+          <a className="btn1" href="mailto:mmm.manish163@gmail.com">
+            mmm.manish163@gmail.com
+          </a>
         </div>
       </div>
     </section>

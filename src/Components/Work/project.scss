@@ -24,19 +24,17 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-
-  h3 {
-    color: #2c3e50;
-  }
-  p {
-    color: #555555;
-  }
+  padding-inline: 1rem;
 
   .ImgHead {
     margin-top: 3rem;
     width: 100px;
     margin-top: 1rem;
     transform: rotate(-150deg);
+  }
+
+  @media (max-width: 768px) {
+    padding-inline: 0;
   }
 }
 
@@ -74,16 +72,17 @@
   &-content {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 5px;
 
-    .card-tech {
-      font-style: italic;
-      font-size: 0.875rem;
+    .subtitle {
+      font-size: 1.2rem;
+      font-weight: 500;
     }
-    .desp {
-      color: #555555;
-      line-height: 1.2;
+
+    .techn {
+      // padding-top: 5px;
     }
+
     .card-link {
       display: flex;
       align-items: center;

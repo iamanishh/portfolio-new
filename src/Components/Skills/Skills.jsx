@@ -1,5 +1,6 @@
 import React from "react";
 import "./skills.scss";
+import { GoArrowDownRight } from "react-icons/go";
 import {
   FaJava,
   FaReact,
@@ -28,7 +29,7 @@ import {
 const Skills = () => {
   return (
     <section id="skills">
-      <div className="container skills">
+      <div className="skills">
         <div className="left">
           <SkillHeader />
           <TechIcons />
@@ -43,18 +44,13 @@ const Skills = () => {
 
 const SkillHeader = () => (
   <div className="tech">
-    <p className="section-subtitle">Tech Stack</p>
-    <p>
-      <strong>Frontend:- </strong> JavaScript, TypeScript, React.js, Redux,
-      HTML, CSS
-    </p>
-    <p>
-      <strong>Backend:- </strong> Java, Spring, Spring Boot, Hibernate, MySQL,
-      MongoDB
-    </p>
-    <p>
-      <strong>Tools and Technologies:- </strong> Git, GitHub, Linux, Docker,
-      Kubernetes, AWS, Redis, Kafka
+    <div className="skill-header text5">
+      <GoArrowDownRight className="arrow" />
+      <p>(Tech-Stack)</p>
+    </div>
+    <p className="text3">
+      I specialize in a variety of languages, frameworks, and tools that allow
+      me to build robust and scalable applications
     </p>
   </div>
 );
@@ -117,13 +113,17 @@ const TechIcons = () => {
 const Experience = () => {
   return (
     <div className="experience">
-      <h3 className="section-subtitle">Experience</h3>
-      <div className="experience-details">
+      <div className="exp-header text5">
+        <GoArrowDownRight className="arrow" />
+        <p>(Experience)</p>
+      </div>
+
+      <div className="exp-details">
         <p>
           <strong>System Engineer @ Infosys Ltd</strong>
         </p>
-        <p className="experience-duration">March 2022 - Nov 2023</p>
-        <p className="experience-description">
+        <p className="text5">March 2022 - Nov 2023</p>
+        <p className="text3">
           Worked on various backend solutions, focusing on building scalable
           microservices using Spring Boot. Collaborated with cross-functional
           teams to deliver high-quality software solutions.

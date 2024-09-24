@@ -1,11 +1,5 @@
 #header {
-  position: fixed;
-  top: 0;
-  width: 100%;
   height: 70px;
-  background-color: #fafafa;
-  background: blur(10px);
-
   z-index: 10;
 }
 
@@ -14,11 +8,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #e5ebf0;
 }
 
 .header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .header .links ul {

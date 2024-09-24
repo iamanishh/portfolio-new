@@ -2,11 +2,12 @@ import React, { useRef } from "react";
 import "./contact.scss";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
+import { GoArrowDownRight } from "react-icons/go";
 
 const Contact = () => {
   return (
     <section id="contact">
-      <div className="container contact">
+      <div className="container-sm contact">
         <ContactHeading />
         <ContactForm />
       </div>
@@ -17,14 +18,29 @@ const Contact = () => {
 const ContactHeading = () => {
   return (
     <div className="contact__header">
-      <p className="t-top">Contact</p>
-      <h2 className="title2">
-        Interested in talking, <br />
+      <h2 className="section-heading">
+        Interested <span className="curs">i</span>n
+        <span className="curs"> talking,</span> <br />
         let’s do it.
       </h2>
-      <p className="contact__description">
-        I am always open to discuss or collaborate for any interesting project.
+      <p className="text4">
+        Looking to start a project and need some help?
+        <br /> I'm here for you.
       </p>
+      
+      <p className="contact__description text3">
+        I am always open to discuss or collaborate. Tell me about your project
+        in the form below. If you’d prefer to email instead, reach out to &nbsp;
+        <span className="underline email">mmm.manish163@gmail.com</span>
+        <br />
+        <br />
+        <span className="text4">/or</span>
+      </p>
+
+      <div className="fill-form">
+        <GoArrowDownRight className="arrow" />
+        <p> (Fill the Form)</p>
+      </div>
     </div>
   );
 };
@@ -113,7 +129,7 @@ const ContactForm = () => {
         </button>
       </form>
 
-      <div className="contact__details">
+      {/* <div className="contact__details">
         <div className="contact__section">
           <h2 className="contact__label">Contact Details</h2>
           <a href="mailto:mmm.maish163@gmail.com">mmm.maish163@gmail.com</a>
@@ -145,7 +161,7 @@ const ContactForm = () => {
             Twitter
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

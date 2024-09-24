@@ -4,10 +4,11 @@ import "./project.scss";
 import { projects } from "../../data/data";
 import capture from "../../assets/images/sushi3.jpg";
 import { ImArrowUpRight2 } from "react-icons/im";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   return (
-    <section id="projects">
+    <section id="work">
       <div className="container projects">
         <ProjectHeading />
         <ProjectCard projects={projects} />
@@ -18,8 +19,10 @@ const Project = () => {
 
 const ProjectHeading = () => (
   <div className="projects-header">
-    <p className="t-top">Projects</p>
-    <h3 className="title2">Check out my latest work</h3>
+    <h2 className="section-heading">
+      Turning <span className="curs">ideas</span> <br />
+      <span className="curs">into</span> reality
+    </h2>
     <p>
       I have worked on a variety of projects from simple website to complex app.
       Here are a few of my favourites:-
@@ -42,16 +45,20 @@ const ProjectCardItem = ({ project }) => (
       <img src={capture} alt="" />
     </div>
     <div className="card-content">
-      <h4 className="subtitle">{project.title}</h4>
       <div className="f-all">
-        <p className="desc-sm">March 2024</p>
-        <p className="card-tech ">{project.technology}</p>
+        <p className="subtitle">{project.title}</p>
+        <p className="text7">March 2024</p>
       </div>
-      <p className="desp">{project.description}</p>
-      <a href="#" className="card-link btn1">
+      <p className="textt4">{project.description}</p>
+      <p className="text6 ">{project.technology}</p>
+      <Link
+        href="https://github.com/iamanishh"
+        // target="_blank"
+        className="card-link btn1"
+      >
         View details &nbsp;
         <ImArrowUpRight2 />
-      </a>
+      </Link>
     </div>
   </div>
 );
