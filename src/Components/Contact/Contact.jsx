@@ -127,40 +127,6 @@ const ContactForm = () => {
           Send
         </button>
       </form>
-
-      {/* <div className="contact__details">
-        <div className="contact__section">
-          <h2 className="contact__label">Contact Details</h2>
-          <a href="mailto:mmm.maish163@gmail.com">mmm.maish163@gmail.com</a>
-          <p>
-            Phone: <a href="tel:+919430017091">+91 9430017091</a>
-          </p>
-        </div>
-        <div className="contact__section">
-          <h2 className="contact__label">Socials</h2>
-          <a
-            href="https://github.com/iamanishh"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://linkedin.com/in/iamanishh"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="https://twitter.com/iamanish__"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Twitter
-          </a>
-        </div>
-      </div> */}
     </div>
   );
 };

@@ -1,10 +1,12 @@
 #header {
-  height: 70px;
-  z-index: 10;
+  // background-color: #fafafa;
 }
 
 .header {
+  position: relative;
   height: 70px;
+  z-index: 10;
+
   display: flex;
   justify-content: space-between;
   align-items: center;

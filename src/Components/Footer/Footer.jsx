@@ -15,41 +15,32 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div className="container footer">
-        <div className="footer__content">
-          <div className="f-left">
-            <div className="logo">
-              <a href="/">
-                Manish <span></span>
-              </a>
-              <p className="tinyy">
-                Behind Every Great Application <br />
-                Lies a Strong Backend
-              </p>
-            </div>
-            <div className="time">
-              <p className="tiny">Local Time</p>
-              <p className="w-color">{formattedTime}</p>
-            </div>
-          </div>
-
-          <div className="f-right">
-            <ul>
-              {links.map((link) => (
-                <li key={link.name}>
-                  <Link to={link.href}>{link.name} </Link>
-                </li>
-              ))}
-            </ul>
-            <div className="edition">
-              <p className="tiny">Version</p>
-              <p className="w-color">
-                {" "}
-                &copy; {new Date().getFullYear()} Edition
-              </p>
-            </div>
-          </div>
+        <div className="social">
+          <Link
+            href="https://github.com/iamanishh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </Link>
+          <Link
+            href="https://linkedin.com/in/iamanishh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </Link>
+          <Link
+            href="https://twitter.com/iamanish__"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </Link>
         </div>
-        <p className="f-copy"> All rights reserved.</p>
+        <div className="time">
+          <p>©2024 Manish </p>
+        </div>
       </div>
     </footer>
   );
