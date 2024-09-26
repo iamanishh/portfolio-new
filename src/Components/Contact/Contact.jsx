@@ -7,7 +7,7 @@ import { GoArrowDownRight } from "react-icons/go";
 const Contact = () => {
   return (
     <section id="contact">
-      <div className="container-sm contact">
+      <div className="container contact">
         <ContactHeading />
         <ContactForm />
       </div>
@@ -24,13 +24,12 @@ const ContactHeading = () => {
         let’s do it.
       </h2>
       <p className="text4">
-        Looking to start a project and need some help?
+        Looking to discuss or collaborate for any project.
         <br /> I'm here for you.
       </p>
-      
-      <p className="contact__description text3">
-        I am always open to discuss or collaborate. Tell me about your project
-        in the form below. If you’d prefer to email instead, reach out to &nbsp;
+      <p className="text3">
+        Tell me about your project in the form below. If you’d prefer to email
+        instead, reach out to &nbsp;
         <span className="underline email">mmm.manish163@gmail.com</span>
         <br />
         <br />
@@ -89,7 +88,7 @@ const ContactForm = () => {
           <input
             type="text"
             id="name"
-            placeholder="John Doe"
+            placeholder="Name"
             {...register("name", { required: "Name is required" })}
           />
           {errors.name && <p className="error">{errors.name.message}</p>}
@@ -100,7 +99,7 @@ const ContactForm = () => {
           <input
             type="email"
             id="email"
-            placeholder="practice@gmail.com"
+            placeholder="Email"
             {...register("email", {
               required: "Email is required",
               pattern: {

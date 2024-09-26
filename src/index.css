@@ -229,14 +229,23 @@ section {
   }
 }
 
-.head-btn {
-  background-color: #fcfbfd;
-  font-size: 10px;
-  font-weight: 600;
-  padding: 4px 8px;
-  border: 1px solid #6b6b6b;
+.btn-1 {
+  width: fit-content;
+  font-size: 12px;
+  padding: 5px 13px;
   border-radius: 20px;
+  background-color: #e7ebee;
 }
+
+.btn-2 {
+  width: fit-content;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+}
+
 .btn-round {
   display: flex;
   align-items: center;
@@ -249,15 +258,4 @@ section {
 
   color: #fff;
   background-color: black;
-}
-
-.btn1 {
-  width: fit-content;
-  padding: 10px 15px;
-  border-radius: 20px;
-  font-size: 14px;
-  margin-top: 1.3rem;
-
-  color: #fff;
-  background-color: #0b0f13;
 }

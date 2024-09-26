@@ -5,7 +5,24 @@
 .skills {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  margin-block: 2rem;
+}
+
+.skill-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 750px;
+  border-top: 1px solid #e5e7eb;
+
+  gap: 1rem;
+
+  .skill-head {
+    display: flex;
+    align-items: center;
+
+    padding-block: 1rem;
+  }
 }
 
 .tech-icons {
@@ -33,11 +50,6 @@
       padding-left: 10px;
       border-radius: 20px;
 
-      .tech-icon {
-        height: 1.25rem;
-        width: fit-content;
-      }
-
       .tech-name {
         font-size: 0.875rem;
         line-height: 1.25;
@@ -49,37 +61,22 @@
 }
 
 .experience {
-  max-width: 700px;
+  max-width: 750px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  margin-top: 3rem;
   border-top: 1px solid #e5e7eb;
 
-  .exp-header {
+  &-header {
     display: flex;
     align-items: center;
     gap: 1rem;
     padding-block: 1rem;
   }
 
-  .exp-details {
+  &-details {
     display: flex;
     flex-direction: column;
     gap: 5px;
-  }
-}
-
-.tech {
-  border-top: 1px solid #e5e7eb;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 750px;
-
-  .skill-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding-block: 1rem;
   }
 }
