@@ -1,4 +1,3 @@
-import React from "react";
 import "./hero.scss";
 
 const Hero = () => {
@@ -32,7 +31,7 @@ const Hero = () => {
         </div>
 
         <div className="hero__image">
-          <img src="./landing4.webp" alt="hero" />
+          <img src="./homepage.gif" alt="hero" />
         </div>
       </div>
     </section>
