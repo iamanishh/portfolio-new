@@ -1,7 +1,6 @@
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header/Header";
-import Footer from "./Components/Footer/Footer";
+// import Footer from "./Components/Footer/Footer";
 
 import About from "./Components/About/About";
 import Hero from "./Components/Hero/Hero";
@@ -19,10 +18,8 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/work" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
-          {/* <Route path="/*" element={<h1>Error 404</h1>} /> */}
+          <Route path="/*" element={<h1>Error 404</h1>} />
         </Routes>
-
-        <Footer />
       </div>
     </BrowserRouter>
   );

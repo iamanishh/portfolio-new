@@ -1,4 +1,3 @@
-import React from "react";
 import "./header.scss";
 import { Link } from "react-router-dom";
 import { links } from "../../data/data";
@@ -12,6 +11,7 @@ const Header = () => {
             Manish <span></span>
           </Link>
         </div>
+        
         <nav className="links">
           <ul>
             {links.map(({ name, href }) => (

@@ -1,6 +1,8 @@
-import React from "react";
 import "./about.scss";
 import Skills from "../Skills/Skills";
+import { HiMiniCodeBracket } from "react-icons/hi2";
+import { FaGraduationCap } from "react-icons/fa6";
+import { MdOutlineWorkOutline } from "react-icons/md";
 
 const About = () => {
   return (
@@ -8,74 +10,62 @@ const About = () => {
       <div className="container about ">
         <header className="about__header">
           <h2 className="section-heading">
-            <span className="curs">Coding,</span> meditation <br />
-            and learning...
+            <span className="curs">Engineering </span> Ideas <br />
+            into Reality...
           </h2>
-          <p className="about-sub text4">
-            Discover more about me and the technologies I use that guide my work
-            and shape my results.
-          </p>
         </header>
 
-        <figure className="about__image">
-          <img src="./grid1.png" alt="men" />
-        </figure>
-
-        <article className="about__content">
-          <div className="about-text ">
-            <p className="text3">Hey, /'m Manish Kumar</p>
-            <p className="text3">
-              As a backend developer with 2 years of experience specializing in
-              <strong> Java, Spring Boot, & React </strong>, I've honed my
-              skills in crafting robust APIs and microservices.
-            </p>
-            <br />
-            <p className="text3">
-              I'm comfortable working with various databases, including MySQL &
-              MongoDB, and have a solid understanding of cloud technologies. I
-              have foundational understanding of Dockerization and
-              containerization, allowing me to build efficient and scalable
-              applications.
-            </p>
+        <div className="about__content">
+          <div className="about__image">
+            <img src="./grid1.png" alt="men" />
           </div>
 
-          <AboutSocial />
-          <Skills />
-        </article>
+          <div className="about__info">
+            <div className="descrip">
+              <p className="text3">
+                I’m a Backend Developer with two years of hands-on experience
+                working with Java and Spring Boot. During my time at Infosys, I
+                had the chance to design and build scalable applications using
+                microservices architecture, fine-tune databases for better
+                performance, and create APIs that were both efficient and easy
+                to use.
+                <br />
+                <br />
+                I’m passionate about solving complex problems and continuously
+                learning new technologies. Right now, I’m excited to explore new
+                opportunities where I can grow, contribute, and make a
+                meaningful impact.
+              </p>
+            </div>
+
+            <div className="about__highlights">
+              <div className="highlight">
+                <HiMiniCodeBracket />
+                <p> Technologies</p>
+                <p className="text4">
+                  Java,Spring MVC, Spring Boot, Hibernate, REST APIs, SQL
+                </p>
+              </div>
+              <div className="highlight">
+                <FaGraduationCap />
+                <p>Education</p>
+                <p className="text4">
+                  B.Tech in Computer Science and Engineering
+                </p>
+              </div>
+              <div className="highlight">
+                <MdOutlineWorkOutline />
+                <p>Experience</p>
+                <p className="text4">Around 2 years of experience in Infosys</p>
+              </div>
+            </div>
+
+            <Skills />
+          </div>
+        </div>
       </div>
     </section>
   );
 };
-
-const AboutSocial = () => (
-  <div className="about-social">
-    <p className="text4">
-      If you want to know more, Feel free to explore these:-
-    </p>
-
-    <div className="social-link">
-      <div>
-        <a href="#" className="underline text3">
-          Collection of work
-        </a>
-        <span>(GitHub)</span>
-      </div>
-
-      <div>
-        <a href="#" className="underline text3">
-          Professional life
-        </a>
-        <span>(LinkedIn)</span>
-      </div>
-
-      <div>
-        <a href="#" className="underline text3">
-          Social Life
-        </a>
-        <span>(Twitter)</span>
-      </div>
-    </div>
-  </div>
-);
 
 export default About;

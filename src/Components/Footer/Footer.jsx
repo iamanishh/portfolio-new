@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./footer.scss";
-import { links } from "../../data/data";
-import { Link } from "react-router-dom";
+// import { links } from "../../data/data";
 
 const Footer = () => {
   const [time, setTime] = useState(new Date());
@@ -16,29 +15,30 @@ const Footer = () => {
     <footer id="footer">
       <div className="container footer">
         <div className="social">
-          <Link
+          <a
             href="https://github.com/iamanishh"
             target="_blank"
             rel="noopener noreferrer"
           >
             GitHub
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://linkedin.com/in/iamanishh"
             target="_blank"
             rel="noopener noreferrer"
           >
             LinkedIn
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://twitter.com/iamanish__"
             target="_blank"
             rel="noopener noreferrer"
           >
             Twitter
-          </Link>
+          </a>
         </div>
         <div className="time">
+          <p>{formattedTime}</p>
           <p>©2024 Manish </p>
         </div>
       </div>

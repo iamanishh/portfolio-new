@@ -1,35 +1,41 @@
-import React from "react";
+import { FaDocker, FaAws, FaJenkins, FaGithub } from "react-icons/fa";
+import {
+  SiKubernetes,
+  SiMysql,
+  SiPostman,
+  SiApachekafka,
+  SiRedis,
+  SiGithubactions,
+} from "react-icons/si";
+
 import "./skills.scss";
-import { GoArrowDownRight } from "react-icons/go";
 
-import TechIcons from "./TechIcons";
-import Experience from "./Experience";
+const Tools = () => {
+  const tools = [
+    { id: "github", icon: <FaGithub style={{ color: "#181717" }} /> },
+    { id: "mysql", icon: <SiMysql style={{ color: "#4479A1" }} /> },
+    { id: "postman", icon: <SiPostman style={{ color: "#FF6C37" }} /> },
+    { id: "docker", icon: <FaDocker style={{ color: "#2496ED" }} /> },
+    { id: "kubernetes", icon: <SiKubernetes style={{ color: "#326CE5" }} /> },
+    { id: "kafka", icon: <SiApachekafka style={{ color: "#231F20" }} /> },
+    { id: "redis", icon: <SiRedis style={{ color: "#DC382D" }} /> },
+    { id: "aws", icon: <FaAws style={{ color: "#FF9900" }} /> },
+    { id: "jenkins", icon: <FaJenkins style={{ color: "#D24939" }} /> },
+    { id: "cicd", icon: <SiGithubactions style={{ color: "#2088FF" }} /> },
+  ];
 
-const Skills = () => {
   return (
-    <div id="skills">
-      <div className="skills">
-        <SkillHeader />
-        <TechIcons />
-
-        <Experience />
+    <div className="tools">
+      <p>Tools I Use</p>
+      <div className="tools__list">
+        {tools.map((tool, index) => (
+          <div key={index} className="tools__item">
+            {tool.icon}
+          </div>
+        ))}
       </div>
     </div>
   );
 };
 
-const SkillHeader = () => (
-  <div className="skill-header ">
-    <div className="skill-head text5">
-      <GoArrowDownRight className="arrow" />
-      <p>(Tech-Stack)</p>
-    </div>
-
-    <p className="text3">
-      I specialize in a variety of languages, frameworks, and tools that allow
-      me to build robust and scalable applications
-    </p>
-  </div>
-);
-
-export default Skills;
+export default Tools;

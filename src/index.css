@@ -15,10 +15,11 @@
   --font1: "Neue Montreal Medium", sans-serif;
   --font3: "Test Tiempos Headline Medium Italic",
     "Test Tiempos Headline Medium Italic Placeholder", sans-serif;
-  --font-body: "Inter", system-ui;
+
+  --font-body: "Inter", sans-serif;
 
   --back-color: #fffaeb;
-  --body-color: #121f3e;
+  --body-color: #222222;
   --black-100: #000;
 
   --color-gray: #ccc;
@@ -36,11 +37,17 @@
 body {
   font-family: var(--font-body);
   font-size: 1rem;
-  line-height: 1.5;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   color: var(--body-color);
   scroll-behavior: smooth;
+
+  background: linear-gradient(
+    90deg,
+    rgba(255, 230, 240, 0.4) 0%,
+    rgba(242, 235, 247, 0.4) 50%,
+    rgba(230, 240, 255, 0.4) 100%
+  );
 }
 
 /* Typography */
@@ -83,7 +90,7 @@ textarea {
 /* Utilities classes  */
 
 .container {
-  max-width: min(1240px, calc(100% - 4rem));
+  max-width: min(1440px, calc(100% - 4rem));
   margin: 0 auto;
 }
 .container-sm {
@@ -99,25 +106,15 @@ section {
 .section-heading {
   font-family: var(--font1);
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1;
   letter-spacing: 0.5px;
-  font-size: 36px;
-
-  @media (min-width: 1025px) {
-    font-size: 48px;
-  }
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    font-size: 64px;
-  }
+  font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
-/* .txt1 {
+.txt1 {
   font-size: 20px;
-
   letter-spacing: -0.05em;
-  color: #121f3e;
-} */
+}
 
 .text2 {
   font-size: 14px;
@@ -131,14 +128,17 @@ section {
 
 .text3 {
   font-size: 16px;
-  letter-spacing: -0.05em;
+  /* letter-spacing: -0.04em; */
+  line-height: 1.4em;
+  color: rgb(83, 88, 98);
+  text-align: justify;
 
   @media (min-width: 1024px) {
     font-size: 20px;
   }
 }
 .text4 {
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: -0.05em;
   color: #8d98af;
 }
@@ -194,6 +194,10 @@ section {
 .flex-c {
   display: flex;
   flex-direction: column;
+}
+.flex-x {
+  display: flex;
+  /* justify-content: space-between; */
 }
 
 .curs {

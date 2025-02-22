@@ -4,34 +4,31 @@ const Hero = () => {
   return (
     <section id="hero">
       <div className="container hero">
-        <div className="hero__text">
-          <h1 className="section-heading">
-            Hey! /’m Manish
-            <br /> A <span className="curs">Software developer</span>
-          </h1>
+        <div className="hero__image">
+          <img
+            width={100}
+            src="https://st2.depositphotos.com/3369547/11899/v/950/depositphotos_118997924-stock-illustration-man-glasses-male-avatar-person.jpg"
+            alt="hero"
+          />
+          <p>Hi!, I am Manish Kumar 👋🏻</p>
+        </div>
 
-          <p className="text2">
+        <div className="hero__text">
+          <h1 className="section-heading">Backend Developer based in India</h1>
+          <p className="desc">
             Passionate behind-the-scenes architect, specializing in backend
-            engineering with Java and Spring Boot.
+            engineering. Building scalable systems that power seamless
+            experiences.
           </p>
         </div>
 
-        <div className="hero__links">
-          <div className="social">
-            <a className="btn btn-1" href="#">
-              GitHub
-            </a>
-            <a className="btn btn-1" href="#">
-              LinkedIn
-            </a>
-          </div>
-          <a className="btn btn-2" href="mailto:mmm.manish163@gmail.com">
-            mmm.manish163@gmail.com
+        <div className="hero__btn">
+          <a href="#" className="btn btn-1">
+            Connect with me
           </a>
-        </div>
-
-        <div className="hero__image">
-          <img src="./homepage.gif" alt="hero" />
+          <a href="#" className="btn btn-1">
+            my resume
+          </a>
         </div>
       </div>
     </section>
