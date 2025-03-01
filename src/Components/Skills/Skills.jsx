@@ -26,7 +26,7 @@ const Tools = () => {
 
   return (
     <div className="tools">
-      <p>Tools I Use</p>
+      <p className="headd">Tools I Use</p>
       <div className="tools__list">
         {tools.map((tool, index) => (
           <div key={index} className="tools__item">

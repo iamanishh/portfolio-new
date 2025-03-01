@@ -1,27 +1,31 @@
 export const projects = [
   {
-    title: "Movie Review",
+    title: "Bitly",
+    about: "An url shortner website",
     technology: "java, springboot, react",
     description:
-      "This is a user-friendly platform for movie reviews, allowing users to share their opinions and discover great films. ",
+      "This is a user-friendly platform for movie reviews, allowing users to share their opinions and discover great films. A smart email chrome assistant which helps in writing.",
   },
   {
-    title: "Ecommerce",
+    title: "Email Assistant",
+    about: "A chrome extension",
     technology: "react, stripe, strapi",
     description:
-      "An online shopping platform with secure payment and seamless data management.",
+      "A smart email chrome assistant which helps in writing and replying to email using AI. A smart email chrome assistant which helps in writing and replying to email",
   },
   {
-    title: "Admin Dashboard",
+    title: "E-Polls",
+    about: "A polling website ",
     technology: "react, recharts",
     description:
-      "An interactive React Admin Dashboard utilizing data visualization tools for real-time insights",
+      "An interactive React Admin Dashboard utilizing data visualization tools for real-time insights.A smart email chrome assistant which helps in writing and replying to email.",
   },
   {
     title: "Sushi",
+    about: "A Sushi website ",
     technology: "html, css, javascript",
     description:
-      "A web application with a smooth and enjoyable browsing experience for all sushi enthusiasts.",
+      "A web application with a smooth and enjoyable browsing experience for all sushi enthusiasts. A smart email chrome assistant which helps in writing and replying to email",
   },
 ];
 

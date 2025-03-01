@@ -1,28 +1,25 @@
 @font-face {
-  font-family: "Test Tiempos Headline Medium Italic";
-  src: url("./assets/fonts/9oF1kxiAQsaxmdWGNZusvfWvdA.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
+  font-family: "CabinetGrotesk-Variable";
+  src: url("./assets/fonts/CabinetGrotesk-Variable.woff2") format("woff2"),
+    url("./assets/fonts/CabinetGrotesk-Variable.woff") format("woff"),
+    url("./assets/fonts/CabinetGrotesk-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
 }
-@font-face {
-  font-family: "Neue Montreal Medium";
-  src: url("./assets/fonts/NeuMontrealMedium.woff2") format("woff2");
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
 :root {
-  --font1: "Neue Montreal Medium", sans-serif;
-  --font3: "Test Tiempos Headline Medium Italic",
-    "Test Tiempos Headline Medium Italic Placeholder", sans-serif;
-
-  --font-body: "Inter", sans-serif;
-
-  --back-color: #fffaeb;
-  --body-color: #222222;
-  --black-100: #000;
-
-  --color-gray: #ccc;
+  --font-cabin: "CabinetGrotesk-Variable", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-heading: "PT Serif", serif;
+  --font-albert-sans: "Albert Sans", sans-serif;
   --border: 1px solid #e5e5e5;
 }
 
@@ -35,19 +32,20 @@
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-albert-sans);
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  color: var(--body-color);
+  line-height: 1.4em;
+  color: rgb(83, 88, 98);
   scroll-behavior: smooth;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(255, 230, 240, 0.4) 0%,
     rgba(242, 235, 247, 0.4) 50%,
     rgba(230, 240, 255, 0.4) 100%
-  );
+  ); */
 }
 
 /* Typography */
@@ -104,11 +102,20 @@ section {
 
 /*****   TEXT VARIABLE  ******/
 .section-heading {
-  font-family: var(--font1);
+  font-family: var(--font-heading);
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.5px;
   font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.section-subheading {
+  font-weight: 400;
+  line-height: 1.1;
+  /*  */
+  letter-spacing: -0.05em;
+  font-size: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem);
+  /* font-family: var(--font-cabin); */
 }
 
 .txt1 {
@@ -127,20 +134,24 @@ section {
 }
 
 .text3 {
-  font-size: 16px;
-  /* letter-spacing: -0.04em; */
-  line-height: 1.4em;
-  color: rgb(83, 88, 98);
-  text-align: justify;
+  span {
+    color: #111827;
+  }
 
   @media (min-width: 1024px) {
     font-size: 20px;
   }
 }
+
+.headd {
+  font-family: var(--font-roboto);
+}
 .text4 {
   font-size: 14px;
-  letter-spacing: -0.05em;
+
   color: #8d98af;
+  line-height: 1.1;
+  font-family: var(--font-light);
 }
 .textt4 {
   font-size: 16px;
@@ -150,7 +161,7 @@ section {
 
 .text6 {
   font-size: 14px;
-  letter-spacing: -0.05em;
+  font-style: italic;
   color: #8d98af;
 }
 .text7 {
@@ -236,17 +247,20 @@ section {
 
 .btn-1 {
   width: fit-content;
-  font-size: 12px;
-  padding: 5px 13px;
-  border-radius: 20px;
+  font-size: 14px;
+  padding: 10px 15px;
+  margin-top: 5px;
+  border-radius: 10px;
   background-color: #e7ebee;
+  color: #000;
 }
 
 .btn-2 {
   width: fit-content;
   font-size: 14px;
-  padding: 10px 15px;
-  border-radius: 20px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-top: 5px;
   background-color: black;
   color: white;
 }

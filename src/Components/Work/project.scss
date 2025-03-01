@@ -1,6 +1,5 @@
 #projects {
-  background-color: #f9f3e8;
-  // background-color: #fff;
+  background-color: #fafaf9;
 }
 
 .projects {
@@ -56,12 +55,12 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: #fafaf9;
+  background-color: #fff;
   padding: 1rem 0.7rem;
   border-radius: 10px;
 
   &-image {
-    height: 210px;
+    height: 230px;
     img {
       width: 100%;
       height: 100%;
@@ -75,14 +74,17 @@
     gap: 5px;
 
     .subtitle {
-      font-size: 1.2rem;
-      font-weight: 500;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    .sub {
+      font-size: 1rem;
+      margin-top: -5px;
     }
 
     .card-link {
-      display: flex;
-      align-items: center;
-      align-self: flex-end;
+      // display: flex;
+      // align-items: center;
     }
   }
 }

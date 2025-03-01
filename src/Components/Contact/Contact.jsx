@@ -28,8 +28,7 @@ const ContactHeading = () => {
         <br /> I'm here for you.
       </p>
       <p className="text3">
-        Tell me about your project in the form below. If you’d prefer to email
-        instead, reach out to &nbsp;
+        Tell me about your project here
         <span className="underline email">mmm.manish163@gmail.com</span>
         <br />
         <br />

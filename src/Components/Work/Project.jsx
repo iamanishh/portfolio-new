@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import React from "react";
 import "./project.scss";
 
 import { projects } from "../../data/data";
@@ -9,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Project = () => {
   return (
-    <section id="work">
+    <section id="projects">
       <div className="container projects">
         <ProjectHeading />
         <ProjectCard projects={projects} />
@@ -46,16 +45,16 @@ const ProjectCardItem = ({ project }) => (
       <img src={capture} alt="" />
     </div>
     <div className="card-content">
-      <div className="f-all">
-        <p className="subtitle">{project.title}</p>
-        <p className="text7">March 2024</p>
-      </div>
-      <p className="textt4">{project.description}</p>
+      <p className="subtitle">{project.title}</p>
+      <p className="sub">{project.about}</p>
       <p className="text6 ">{project.technology}</p>
+
+      <p className="textt4">{project.description}</p>
+
       <Link
         href="https://github.com/iamanishh"
         // target="_blank"
-        className="card-link btn1"
+        className="card-link btn-2"
       >
         View details &nbsp;
         <ImArrowUpRight2 />
