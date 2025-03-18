@@ -46,10 +46,10 @@ const ProjectCardItem = ({ project }) => (
     </div>
     <div className="card-content">
       <p className="subtitle">{project.title}</p>
-      <p className="sub">{project.about}</p>
-      <p className="text6 ">{project.technology}</p>
+      {/* <p className="sub">{project.about}</p> */}
 
-      <p className="textt4">{project.description}</p>
+      <p className="textt42">{project.description}</p>
+      <p className="text6 ">{project.technology}</p>
 
       <Link
         href="https://github.com/iamanishh"

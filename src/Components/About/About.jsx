@@ -31,11 +31,11 @@ const About = () => {
               <p className="text3">
                 I started my journey at Infosys, where I worked on
                 high-performance applications in the logistics domain,
-                fine-tuned databases, and developed efficient APIs using
-                microservices architecture. Debugging, optimizing performance,
-                and ensuring seamless backend operations became a big part of my
-                work.
+                fine-tuned databases, and developed efficient APIs. Debugging,
+                optimizing performance, and ensuring seamless backend operations
+                was a big part of my work.
               </p>
+
               <br />
 
               <p className="text3">

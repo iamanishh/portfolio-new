@@ -1,28 +1,3 @@
-@font-face {
-  font-family: "CabinetGrotesk-Variable";
-  src: url("./assets/fonts/CabinetGrotesk-Variable.woff2") format("woff2"),
-    url("./assets/fonts/CabinetGrotesk-Variable.woff") format("woff"),
-    url("./assets/fonts/CabinetGrotesk-Variable.ttf") format("truetype");
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: normal;
-}
-
-.inter {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-:root {
-  --font-cabin: "CabinetGrotesk-Variable", sans-serif;
-  --font-roboto: "Roboto", sans-serif;
-  --font-heading: "PT Serif", serif;
-  --font-albert-sans: "Albert Sans", sans-serif;
-  --border: 1px solid #e5e5e5;
-}
-
 *,
 *::before,
 *::after {
@@ -31,9 +6,13 @@
   padding: 0;
 }
 
+:root {
+  --font-heading: "PT Serif", serif;
+  --border: 1px solid #e5e5e5;
+}
+
 body {
-  font-family: var(--font-albert-sans);
-  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.4em;
@@ -113,7 +92,7 @@ section {
   font-weight: 400;
   line-height: 1.1;
   /*  */
-  letter-spacing: -0.05em;
+  /* letter-spacing: -0.05em; */
   font-size: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem);
   /* font-family: var(--font-cabin); */
 }
@@ -134,6 +113,7 @@ section {
 }
 
 .text3 {
+  font-size: 18px;
   span {
     color: #111827;
   }

@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="container hero">
         <div className="hero__image">
           <img width={100} src="avatar.svg" alt="hero" />
-          <p>Hello!, I am Manish Kumar 👋🏻</p>
+          <p className="text3">Hello!, I am Manish Kumar 👋🏻</p>
         </div>
 
         <div className="hero__text">
