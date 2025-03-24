@@ -1,104 +1,251 @@
 #about {
   background-color: #fff;
+  padding: 6rem 0;
+  overflow: hidden;
+
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
+  @media (max-width: 768px) {
+    padding: 0 1.5rem;
+  }
+}
 
-    .about-sub {
-      max-width: 400px;
-      align-self: flex-end;
+// About header styling
+.about-header {
+  margin-bottom: 4rem;
+
+  .section-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1a202c;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
     }
 
-    @media (max-width: 1024px) {
-      flex-direction: column;
+    @media (max-width: 480px) {
+      font-size: 2rem;
     }
   }
 
-  &__image {
-    flex: 1;
+  .accent-text {
     position: relative;
-    align-self: center;
-    height: 600px;
+    color: #3182ce;
+    font-style: italic;
+    display: inline-block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #3182ce;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.3s ease-out;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+}
+
+// About content layout
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+// About image styling
+.about-image {
+  flex: 1;
+
+  .image-container {
+    position: relative;
+    max-width: 450px;
 
     img {
       width: 100%;
-      height: 100%;
+      height: auto;
       object-fit: contain;
+      border-radius: 4px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .image-decoration {
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      right: 15px;
+      bottom: 15px;
+      border: 2px solid #3182ce;
+      border-radius: 4px;
+      z-index: 1;
     }
   }
 
-  &__content {
+  @media (max-width: 768px) {
+    .image-container {
+      max-width: 100%;
+    }
+  }
+}
+
+// About info styling
+.about-info {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+// Description section
+.about-description {
+  .section-subheading {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .description-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #4a5568;
+    margin-bottom: 1.2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Highlights section
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.highlight-item {
+  background-color: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: #a0aec0;
+  }
+
+  .highlight-icon {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    padding-block: 4rem;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ebf8ff;
+    color: #3182ce;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 
-  &__info {
-    display: flex;
-    flex: 1.5;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 10px;
+  .highlight-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
   }
-  &__highlights {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
 
-    .highlight {
-      width: 240px;
-      padding: 1rem;
-
-      border: 1px solid #e0e0e0;
-      border-radius: 10px;
-    }
+  .highlight-description {
+    font-size: 0.95rem;
+    color: #4a5568;
+    line-height: 1.5;
   }
 }
 
-.about-social {
-  // margin-left: 5rem;
+// Media queries for responsiveness
+@media (max-width: 768px) {
+  #about {
+    padding: 4rem 0;
+  }
 
-  .social-link {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 1rem;
+  .about-header {
+    margin-bottom: 3rem;
+  }
 
-    span {
-      text-decoration: unset;
-      font-size: 14px;
-      letter-spacing: -0.05em;
-      color: #8d98af;
-      margin-left: 10px;
-    }
+  .about-content {
+    gap: 2.5rem;
+  }
+
+  .about-highlights {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .about__content {
-    flex-direction: column;
+@media (max-width: 480px) {
+  #about {
+    padding: 3rem 0;
   }
-  .about__image {
-    height: 400px;
+
+  .about-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .about-image {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-item {
+    padding: 1.25rem;
   }
 }
 
-@media screen and (max-width: 540px) {
-  .about__highlights {
-    flex-direction: column;
+// Animation keyframes
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
-    .highlight {
-      width: 100%;
-      padding: 2rem 1rem;
-    }
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(49, 130, 206, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(49, 130, 206, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(49, 130, 206, 0);
   }
 }

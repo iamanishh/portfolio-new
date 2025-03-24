@@ -1,38 +1,453 @@
+/* Hero section with backend developer theme */
 #hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #0f1924;
+  background-image: radial-gradient(
+      circle at 20% 30%,
+      rgba(37, 79, 112, 0.15) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(234, 100, 66, 0.1) 0%,
+      transparent 40%
+    );
+  position: relative;
+  overflow: hidden;
 }
 
-.hero {
+/* Terminal window-like background elements */
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgba(21, 35, 50, 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(21, 35, 50, 0.5) 1px, transparent 1px);
+  background-size: 20px 20px;
+  z-index: 0;
+}
+
+/* Code snippet floating in background */
+#hero::after {
+  content: '{ @Autowired\n  private Repository repo;\n\n  @GetMapping("/api")\n  public Response getData() {\n    return service.process();\n  }\n}';
+  font-family: "Courier New", monospace;
+  position: absolute;
+  color: rgba(95, 158, 160, 0.08);
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
+  white-space: pre;
+  top: 20%;
+  right: 10%;
+  z-index: 0;
+  animation: float 20s ease-in-out infinite alternate;
+}
+
+/* Hero container */
+.container.hero {
+  z-index: 1;
+  position: relative;
+}
+
+/* Desktop layout */
+@media (min-width: 992px) {
+  .container.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image text"
+      "button button";
+    gap: 2rem;
+  }
+
+  /* Database connection string floating element */
+  .container.hero::before {
+    content: "jdbc:mysql://localhost:3306/db?useSSL=false";
+    position: absolute;
+    font-family: "Courier New", monospace;
+    font-size: 0.8rem;
+    color: rgba(92, 179, 102, 0.12);
+    bottom: 15%;
+    left: 2%;
+    z-index: 0;
+    animation: blink 4s infinite alternate;
+  }
+
+  /* Spring Boot annotation decorative element */
+  .container.hero::after {
+    content: "@SpringBootApplication";
+    position: absolute;
+    font-family: "Courier New", monospace;
+    font-size: 0.8rem;
+    color: rgba(108, 180, 238, 0.12);
+    top: 10%;
+    right: 15%;
+    z-index: 0;
+    animation: blink 3s infinite alternate-reverse;
+  }
+
+  @keyframes blink {
+    0%,
+    90% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+/* Hero image section with terminal-like frame */
+.hero__image {
+  grid-area: image;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+}
 
-  &__image {
-    img {
-      //  grayscale: 1
-    }
+@media (min-width: 992px) {
+  .hero__image {
+    position: relative;
+    padding-right: 3rem;
   }
 
-  &__text {
-    .desc {
-      font-size: 18px;
-    }
-    p {
-      width: 80%;
-      margin-inline: auto;
-      padding-top: 1rem;
-      text-align: center;
-
-      @media screen and (max-width: 540px) {
-        width: 100%;
-      }
-    }
+  /* Terminal window frame effect */
+  .hero__image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(108, 180, 238, 0.2);
+    border-radius: 15px;
+    background: rgba(21, 35, 50, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    z-index: -1;
   }
 
-  &__button {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+  /* Terminal window header */
+  .hero__image::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    left: 0;
+    background: rgba(21, 35, 50, 0.5);
+    border-radius: 15px 15px 0 0;
+    z-index: -1;
+    border-bottom: 1px solid rgba(108, 180, 238, 0.2);
   }
+}
+
+.hero__image img {
+  width: 180px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #4a7baa;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 0 10px rgba(74, 123, 170, 0.1);
+  animation: float 4s ease-in-out infinite;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .hero__image img {
+    width: 200px;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.text3 {
+  background: linear-gradient(to bottom, #76b852, #4a7baa);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  font-family: "Courier New", monospace;
+  padding: 0.5rem 0;
+  text-align: center;
+  position: relative;
+}
+
+/* Terminal prompt effect */
+.text3::before {
+  content: ">";
+  position: absolute;
+  left: -15px;
+  color: #76b852;
+  animation: blink-cursor 1s step-end infinite;
+}
+
+@keyframes blink-cursor {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Hero text section */
+.hero__text {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #e6e6e6;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .hero__text {
+    text-align: left;
+    padding-left: 3rem;
+    position: relative;
+  }
+
+  /* Left-side terminal prompt */
+  .hero__text::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, #4a7baa, transparent);
+    left: 0;
+    top: 0;
+  }
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  background: linear-gradient(45deg, #e6e6e6 30%, #4a7baa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@media (min-width: 992px) {
+  .section-heading {
+    font-size: 3rem;
+  }
+
+  /* SQL table-like underline */
+  .section-heading::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background: linear-gradient(to right, #4a7baa, transparent);
+    bottom: -10px;
+    left: 0;
+  }
+}
+
+.desc {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+/* Tech stack highlighting */
+.desc strong {
+  color: #76b852;
+  font-weight: normal;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero buttons */
+.hero__button {
+  grid-area: button;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+@media (min-width: 992px) {
+  .hero__button {
+    justify-content: flex-start;
+    padding-left: 3rem;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  text-align: center;
+  font-family: "Courier New", monospace;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  text-transform: lowercase;
+  position: relative;
+  overflow: hidden;
+}
+
+/* REST API method style buttons */
+.btn-1 {
+  background-color: rgba(21, 35, 50, 0.8);
+  color: #e6e6e6;
+  border: 1px solid #4a7baa;
+  box-shadow: 0 4px 15px rgba(21, 35, 50, 0.3);
+}
+
+.btn-1:hover {
+  background-color: rgba(74, 123, 170, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(21, 35, 50, 0.4);
+}
+
+.btn-2 {
+  background-color: #4a7baa;
+  color: #e6e6e6;
+  border: none;
+  box-shadow: 0 4px 15px rgba(21, 35, 50, 0.3);
+}
+
+.btn-2:hover {
+  background-color: #5a8bc0;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(21, 35, 50, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .hero__button {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 85%;
+    max-width: 300px;
+  }
+
+  #hero {
+    padding: 3rem 0;
+  }
+
+  .desc {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+/* Modify the existing paragraph to highlight tech stack */
+#hero .desc {
+  position: relative;
+}
+
+/* Add the tech stack tags after the description */
+#hero .desc::after {
+  content: "";
+  display: block;
+  margin-top: 1.5rem;
+  text-align: center;
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  color: #b0b0b0;
+}
+
+@media (min-width: 992px) {
+  #hero .desc::after {
+    text-align: left;
+  }
+
+  /* Code block indicator */
+  .hero__text::after {
+    content: "<>";
+    position: absolute;
+    font-family: "Courier New", monospace;
+    color: rgba(108, 180, 238, 0.2);
+    font-size: 2rem;
+    right: 10%;
+    top: 10%;
+    transform: rotate(10deg);
+  }
+}
+
+/* Tech badges for the stack */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+@media (min-width: 992px) {
+  .tech-stack {
+    justify-content: flex-start;
+  }
+}
+
+.tech-badge {
+  background: rgba(21, 35, 50, 0.6);
+  color: #e6e6e6;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-family: "Courier New", monospace;
+  border: 1px solid rgba(74, 123, 170, 0.3);
+}
+
+.java {
+  border-left: 3px solid #f89820;
+}
+
+.spring {
+  border-left: 3px solid #6db33f;
+}
+
+.sql {
+  border-left: 3px solid #f29111;
 }
