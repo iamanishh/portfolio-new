@@ -2,16 +2,15 @@
   background-color: #fff;
   padding: 6rem 0;
   overflow: hidden;
-
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  // max-width: 1200px;
+  // margin: 0 auto;
+  // padding: 0 2rem;
 
   @media (max-width: 768px) {
-    padding: 0 1.5rem;
+    // padding: 0 1.5rem;
   }
 }
 
@@ -24,6 +23,8 @@
     font-weight: 700;
     line-height: 1.2;
     color: #1a202c;
+
+    font-family: var(--font-heading);
 
     @media (max-width: 768px) {
       font-size: 2.5rem;

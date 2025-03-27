@@ -50,21 +50,6 @@ const ProjectHeading = () => {
         I have worked on a variety of projects from simple websites to complex
         applications. Here are a few of my favorites:
       </p>
-
-      <motion.img
-        src="./arrowe.png"
-        alt="arrow"
-        className="arrow-icon"
-        animate={{
-          y: [0, 10, 0],
-          rotate: -150,
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
     </motion.div>
   );
 };

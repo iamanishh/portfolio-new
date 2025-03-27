@@ -98,7 +98,7 @@ const AboutImage = () => {
         transition={{ duration: 0.3 }}
       >
         <motion.img
-          src="./grid1.png"
+          src="./image1.jpg"
           alt="profile"
           initial={{ filter: "blur(5px)" }}
           animate={{ filter: "blur(0px)" }}
