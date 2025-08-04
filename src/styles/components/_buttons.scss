@@ -1,0 +1,45 @@
+.btn1 {
+  width: fit-content;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+
+  text-transform: uppercase;
+  display: flex;
+  align-self: flex-end;
+}
+
+.btn-title {
+  width: fit-content;
+  padding: 2px 15px;
+  border: 1px solid #ececec;
+  border-radius: 100px;
+
+  letter-spacing: -0.015em;
+}
+
+.btn-round {
+  width: fit-content;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 100px;
+  border: none;
+  font-size: 14px;
+  letter-spacing: -0.015em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+  }
+}
