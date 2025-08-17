@@ -1,11 +1,15 @@
 import Footer from "@/components/layout/Footer";
-// import Navbar from "@/components/layout/Navbar";
-import { Inter } from "next/font/google";
+import Navbar from "@/components/layout/Navbar";
+import { Inter, Shantell_Sans } from "next/font/google";
 
 import "@/styles/main.scss";
-// import SmoothScrollWrapper from "@/components/SmoothScrollWrapper";
 
-const inter = Inter({ subsets: ["latin"] });
+// Dvariables for fonts
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const shantell = Shantell_Sans({
+  subsets: ["latin"],
+  variable: "--font-shantell",
+});
 
 export const metadata = {
   title: "| Manish Kumar",
@@ -14,9 +18,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${shantell.variable}`}>
       <body className={inter.className}>
-        {/* <Navbar /> */}
+        <Navbar />
         <main>{children}</main>
         <Footer />
       </body>

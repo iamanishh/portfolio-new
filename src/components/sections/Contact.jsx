@@ -16,28 +16,31 @@ const Contact = () => {
 const ContactHeading = () => {
   return (
     <div className="contact__details">
-      <p className="btn-title">$_contact</p>
-      <h2 className="title">
-        Interested in talking, <br /> let’s do it.
-      </h2>
+      <p>That’s a wrap? Maybe not.</p>
+      <div className="contact-heading">
+        <h2 className="title-med">
+          Great things start with a 'Hello'!
+          <span className="smiley">
+            <img src="/images/smiley.gif" alt="smiley" />
+          </span>
+        </h2>
+      </div>
 
-      <p className="desc">
-        Have a project in mind? Looking to discuss or collaborate for any
-        project. I'm here for you. Tell me about your project here:-
-      </p>
-      <div className="contact__details-info">
-        <p>
-          <span>
-            <MdEmail />
-          </span>
-          mmm.manish163@gmail.com
+      <div className="desc">
+        <p className="top">
+          Open to conversation 🗣️, collaboration 🤝, and creative challenges 🎨.
         </p>
-        <p>
-          <span>
-            <FaWhatsapp />
-          </span>
-          (123) 456 789 00
+
+        <p className="bottom">
+          Have something exciting in mind? Let’s make it happen — share it here.
         </p>
+      </div>
+
+      <div className="btn-round-med contact__details-info">
+        <span>
+          <MdEmail />
+        </span>
+        <p>mmm.manish163@gmail.com</p>
       </div>
     </div>
   );
@@ -47,7 +50,7 @@ const ContactForm = () => {
   return (
     <div className="contact__form">
       <div className="contact__form-field">
-        <label htmlFor="name">what is your name ?</label>
+        <label htmlFor="name">What is your name ?</label>
         <input type="text" id="name" placeholder="name" />
       </div>
       <div className="contact__form-field">
@@ -59,8 +62,8 @@ const ContactForm = () => {
         <textarea id="message" placeholder="message"></textarea>
       </div>
 
-      <button className="btn1" type="submit">
-        submit
+      <button className=" btn btn-circle" type="submit">
+        Submit
       </button>
     </div>
   );
