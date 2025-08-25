@@ -137,6 +137,14 @@ section {
   margin-bottom: 1.5rem;
 }
 
+.line {
+  border: none;
+  height: 1.1px;
+  margin-bottom: 1rem;
+  background: #7a7a7a;
+  transform-origin: left; /* so it grows left → right */
+}
+
 * {
   // outline: 1px solid red;
 }

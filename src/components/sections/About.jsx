@@ -1,217 +1,3 @@
-// import React from "react";
-// import {
-//   FaUser,
-//   FaCode,
-//   FaBriefcase,
-//   FaGraduationCap,
-//   FaJava,
-//   FaDatabase,
-//   FaDocker,
-//   FaAws,
-//   FaGit,
-//   FaGithub,
-// } from "react-icons/fa";
-// import { SiSpringboot, SiKubernetes } from "react-icons/si";
-// import { GoArrowUpRight } from "react-icons/go";
-
-// const aboutSections = [
-//   {
-//     title: "Intro",
-//     icon: FaUser,
-//     content: (
-//       <>
-//         <p className="text-md">
-//           I'm a Backend Engineer based in India, with nearly two years of
-//           experience building scalable backend systems.
-//         </p>
-//         <p>
-//           I started my journey at Infosys, where I worked on high-performance
-//           applications in the logistics domain, fine-tuned databases, and
-//           developed efficient APIs. Debugging, optimizing performance, and
-//           ensuring seamless backend operations was a big part of my work.
-//         </p>
-//         <p>
-//           These days, I'm focused on learning and exploring new technologies to
-//           build even better, more scalable solutions. I'm always excited to take
-//           on new challenges and make a real impact with my work.
-//         </p>
-//       </>
-//     ),
-//   },
-//   {
-//     title: "Experience",
-//     icon: FaBriefcase,
-//     content: (
-//       <>
-//         <p>
-//           Worked as a <strong>System Engineer</strong> at Infosys for ~2 years,
-//           specializing in backend development in the logistics domain.
-//         </p>
-//         <p>
-//           Designed and optimized <strong>REST APIs</strong>, fine-tuned SQL
-//           databases, and improved application performance for enterprise
-//           clients.
-//         </p>
-//         <p>
-//           Collaborated in agile teams to deliver scalable, production-ready
-//           solutions using modern backend tools.
-//         </p>
-//       </>
-//     ),
-//   },
-//   {
-//     title: "Education",
-//     icon: FaGraduationCap,
-//     content: (
-//       <>
-//         <p className="edu-detail">
-//           Lovely Professional University, Jalanadhar(Punjab)
-//         </p>
-//         <p className="edu-degree">Bachelor of Technology (CSE)</p>
-//       </>
-//     ),
-//   },
-//   {
-//     title: "Skills",
-//     icon: FaCode,
-//     content: (
-//       <>
-//         <p>
-//           Java, Spring Boot, Spring MVC, Hibernate, REST APIs, SQL, PostgreSQL,
-//           AWS, Docker, Kubernetes, CI/CD
-//         </p>
-//         <div className="skills-icons">
-//           <FaJava className="skill-icon java" />
-//           <SiSpringboot className="skill-icon spring" />
-//           <FaDatabase className="skill-icon db" />
-//           <FaDocker className="skill-icon docker" />
-//           <SiKubernetes className="skill-icon k8s" />
-//           <FaAws className="skill-icon aws" />
-//           <FaGit className="skill-icon git" />
-//           <FaGithub className="skill-icon github" />
-//         </div>
-//       </>
-//     ),
-//   },
-// ];
-
-// const About = () => {
-//   const introSection = aboutSections[0];
-//   const experienceSection = aboutSections[1];
-//   const educationSection = aboutSections[2];
-//   const skillsSection = aboutSections[3];
-
-//   return (
-//     <section id="about">
-//       <div className="about container">
-//         <AboutHeader />
-//         <div className="about__content">
-//           {/* Intro with image + social */}
-//           <div className="intro-section">
-//             <div className="about__image">
-//               <img
-//                 src="/images/grid1.png"
-//                 alt="About Me"
-//                 className="about__img"
-//               />
-//             </div>
-
-//             <div className="intro-card">
-//               <div className="about__card-content">{introSection.content}</div>
-//               <div className="about__social">
-//                 <p>Connect with me: </p>
-//                 <div className="s-link">
-//                   <a
-//                     className="btn-social linkedin"
-//                     href="https://linkedin.com/in/yourusername"
-//                     target="_blank"
-//                     rel="noopener noreferrer"
-//                     aria-label="LinkedIn"
-//                   >
-//                     LINKEDIN
-//                     <span>
-//                       <GoArrowUpRight scale={16} />
-//                     </span>
-//                   </a>
-
-//                   <a
-//                     className="btn-social github"
-//                     href="https://github.com/yourusername"
-//                     target="_blank"
-//                     rel="noopener noreferrer"
-//                     aria-label="GitHub"
-//                   >
-//                     GITHUB
-//                     <span>
-//                       <GoArrowUpRight scale={16} />
-//                     </span>
-//                   </a>
-
-//                   <a
-//                     className="btn-social twitter"
-//                     href="https://twitter.com/yourusername"
-//                     target="_blank"
-//                     rel="noopener noreferrer"
-//                     aria-label="Twitter"
-//                   >
-//                     TWITTER
-//                     <GoArrowUpRight scale={16} />
-//                   </a>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-
-//           {/* Experience + Education */}
-//           <div className="intro-section">
-//             <div className="about__card">
-//               <div className="about__card-header">
-//                 <experienceSection.icon className="text-bold" />
-//                 <h3 className="about__card-title">{experienceSection.title}</h3>
-//               </div>
-//               <div className="about__card-content">
-//                 {experienceSection.content}
-//               </div>
-//             </div>
-
-//             <div className="about__card">
-//               <div className="about__card-header">
-//                 <educationSection.icon className="text-bold" />
-//                 <h3 className="about__card-title">{educationSection.title}</h3>
-//               </div>
-//               <div className="about__card-content edu-content">
-//                 {educationSection.content}
-//               </div>
-//             </div>
-//           </div>
-
-//           {/* Skills */}
-//           <div className="single-card">
-//             <div className="about__card">
-//               <div className="about__card-header">
-//                 <skillsSection.icon className="text-bold" />
-//                 <h3 className="about__card-title">{skillsSection.title}</h3>
-//               </div>
-//               <div className="about__card-content">{skillsSection.content}</div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// const AboutHeader = () => (
-//   <div className="about__header">
-//     <p className="btn-title">$_about</p>
-//     <h2 className="title-med">
-//       Engineering <span>Ideas</span> <br />
-//       into <span>Reality...</span>
-//     </h2>
-//   </div>
-// );
-
-// export default About;
 "use client";
 
 import React from "react";
@@ -262,28 +48,27 @@ const About = () => {
       >
         {/* Intro */}
         <h2>About Me</h2>
-        <p className="intro">
-          I’m <strong>Manish Kumar</strong>, a{" "}
-          <strong>Full-Stack Developer</strong> with
-          <strong> 3 years of experience</strong> specializing in{" "}
-          <strong>backend development</strong>. My expertise lies in building{" "}
-          <strong>scalable microservices</strong>,{" "}
-          <strong>secure REST APIs</strong>, and{" "}
-          <strong>distributed systems</strong> using{" "}
-          <strong>Java & Spring Boot</strong>.
-        </p>
-        <p className="intro">
-          I enjoy solving complex problems, from{" "}
-          <strong>optimizing database queries</strong>
-          to designing <strong>event-driven architectures with Kafka</strong>.
-          My goal is to deliver applications that are{" "}
-          <strong>reliable, secure, and cloud-ready</strong>, while keeping
-          performance and user experience at the core.
-        </p>
 
+        <div className="intro">
+          I’m Manish Kumar, a Software Developer with 2 years of experience in
+          building end-to-end applications. My main focus is backend development
+          using Java and Spring Boot, where I design and build REST APIs, work
+          with databases, and contribute to microservices-based systems.
+        </div>
+
+        <div className="intro">
+          I’ve worked with ReactJS for responsive front-end development, giving
+          me a full-stack view. I enjoy solving problems, optimizing
+          performance, and building reliable, scalable applications.
+        </div>
+
+        <div className="intro">
+          I’m passionate about continuous learning and adapting to modern
+          practices, always aiming to deliver solutions that make a real impact.
+        </div>
         {/* Socials */}
         <div className="about__socials">
-          <p>Connect with me: </p>
+          <h3>Connect with me: </h3>
           <div className="social_links">
             <a href="https://linkedin.com" target="_blank" rel="noreferrer">
               LinkedIn
@@ -297,9 +82,14 @@ const About = () => {
             </a>
           </div>
         </div>
-
         {/* Tech Stack */}
         <div className="about__stack">
+          <motion.hr
+            className="line"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+          />
           <h3>Tech Stack</h3>
           <div className="stack__rows">
             {techStack.map((tech, i) => (
@@ -314,27 +104,40 @@ const About = () => {
             ))}
           </div>
         </div>
-
         {/* Experience */}
         <div className="about__experience">
+          <motion.hr
+            className="line"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+          />
           <h3>Experience</h3>
           <div className="experience__card">
-            <h4>Backend Developer @ ABC Tech</h4>
-            <span>2022 – Present</span>
+            <h4>Software Developer @ Infosys</h4>
+            <span>March 2022 – Nov 2023</span>
             <ul>
               <li>
-                Designed and implemented <strong>microservices</strong> with
-                Spring Boot, ensuring scalability and resilience across
-                distributed systems.
+                Maintained and enhanced backend services for logistics
+                applications using Java, Spring Boot, and REST APIs, ensuring
+                smooth day-to-day operations.
               </li>
+
               <li>
-                Integrated <strong>Kafka</strong> for event-driven architecture,
-                reducing service latency and improving system reliability.
+                Fixed production issues, optimized queries, and improved
+                application performance and stability for critical business
+                workflows.
               </li>
+
               <li>
-                Optimized <strong>PostgreSQL queries</strong> and caching
-                strategies, achieving up to{" "}
-                <strong>30% performance improvement</strong> in API responses.
+                Collaborated with senior developers in requirement analysis, bug
+                fixing, and feature enhancements, gaining hands-on experience in
+                real client projects.
+              </li>
+
+              <li>
+                Worked with SQL/PostgreSQL, Git, and deployment processes,
+                following industry best practices.
               </li>
             </ul>
           </div>
