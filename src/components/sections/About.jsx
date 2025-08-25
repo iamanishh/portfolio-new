@@ -216,14 +216,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  FaJava,
-  FaReact,
-  FaDocker,
-  FaGit,
-  FaGithub,
-  FaLinux,
-} from "react-icons/fa";
+import { FaJava, FaReact, FaDocker, FaGit, FaLinux } from "react-icons/fa";
 import {
   SiSpringboot,
   SiPostgresql,
@@ -236,14 +229,15 @@ const techStack = [
   { icon: <FaJava color="#f89820" />, name: "Java" },
   { icon: <SiSpringboot color="#6DB33F" />, name: "Spring Boot" },
   { icon: <SiHibernate color="#59666C" />, name: "Hibernate" },
+  { icon: "🧩", name: "Microservices" },
   { icon: <FaReact color="#61DBFB" />, name: "React" },
-  { icon: <FaGit color="#f34f29" />, name: "Git" },
-  { icon: <FaGithub color="#000" />, name: "GitHub" },
   { icon: <SiPostgresql color="#336791" />, name: "PostgreSQL" },
+  { icon: <FaGit color="#f34f29" />, name: "Git" },
   { icon: <FaLinux color="#FCC624" />, name: "Linux" },
   { icon: <FaDocker color="#0db7ed" />, name: "Docker" },
   { icon: <SiKubernetes color="#326ce5" />, name: "Kubernetes" },
   { icon: <SiApachekafka color="#231f20" />, name: "Kafka" },
+  // Text-based microservices entry
 ];
 
 const About = () => {
@@ -287,6 +281,23 @@ const About = () => {
           performance and user experience at the core.
         </p>
 
+        {/* Socials */}
+        <div className="about__socials">
+          <p>Connect with me: </p>
+          <div className="social_links">
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            <a href="https://github.com" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+
+            <a href="https://x.com" target="_blank" rel="noreferrer">
+              Twitter
+            </a>
+          </div>
+        </div>
+
         {/* Tech Stack */}
         <div className="about__stack">
           <h3>Tech Stack</h3>
@@ -327,16 +338,6 @@ const About = () => {
               </li>
             </ul>
           </div>
-        </div>
-
-        {/* Socials */}
-        <div className="about__socials">
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-            LinkedIn
-          </a>
-          <a href="https://github.com" target="_blank" rel="noreferrer">
-            GitHub
-          </a>
         </div>
       </motion.div>
     </section>

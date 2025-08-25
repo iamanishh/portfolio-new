@@ -1,13 +1,22 @@
 #hero {
   position: relative;
+  height: 100vh; // full viewport height
+  width: 100%;
   background-color: beige;
 
   .hero {
-    position: relative;
-
-    // height: calc(100vh - 70px);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &__content {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -18,18 +27,18 @@
 
     &__description {
       max-width: 700px;
-      font-size: clamp(1rem, 0.8362rem + 0.5517vw, 1.25rem);
-
+      font-size: 1.25rem;
       font-weight: 400;
       color: #475467;
 
       letter-spacing: -0.02em;
       text-align: center;
-      line-height: 1.2;
+      line-height: 1.3;
     }
 
     @media screen and (max-width: 768px) {
       padding-top: 1rem;
+      padding-bottom: 2rem;
     }
   }
 }
